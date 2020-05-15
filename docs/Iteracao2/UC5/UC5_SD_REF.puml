@@ -1,0 +1,62 @@
+@startuml
+autonumber
+
+title UC5_SD_RegistarColaboradorComoUtilizador
+
+participant "lc\n:ListaColaboradores" as LC #DeepSkyBlue
+participant "colab\n:Colaborador" as COLAB
+participant "org\n:Organizacao" as ORG
+participant "ro\n:RegistoOrganizacoes" as RO #DeepSkyBlue
+participant ":Plataforma" as PLAT
+participant "//<<interface>>//\nalg\n:AlgoritmoGeradorPasswords" as ALG #DeepSkyBlue
+participant "aut\n:Autorizacao\nFacade" as AUT
+
+LC -> LC : registaColaboradorComoUtilizador(colab)
+activate LC #DeepSkyBlue
+
+LC -> COLAB : nome=getNome()
+activate COLAB
+deactivate COLAB
+
+LC -> COLAB : email=getEmail()
+activate COLAB
+deactivate COLAB
+
+LC -> ORG : alg=getAlgoritmoGeradorPwd()
+activate ORG
+
+ORG -> RO : alg=getAlgoritmoGeradorPwd()
+activate RO #DeepSkyBlue
+
+RO -> PLAT : alg=getAlgoritmoGeradorPwd()
+activate PLAT
+deactivate PLAT
+deactivate RO
+deactivate ORG
+
+LC -> ALG : pwd=geraPassword(nome, email)
+activate ALG #DeepSkyBlue
+deactivate ALG
+
+LC -> ORG : aut=getAutorizacaoFacade()
+activate ORG
+
+ORG -> RO : aut=getAutorizacaoFacade()
+activate RO #DeepSkyBlue
+
+RO -> PLAT : aut=getAutorizacaoFacade()
+activate PLAT
+deactivate PLAT
+deactivate RO
+deactivate ORG
+
+LC -> AUT : registaUtilizadorComPapel(nome,email,pwd,"COLABORADOR")
+activate AUT
+deactivate AUT
+
+LC -> LC : enviaEmail(email,pwd)
+activate LC #DeepSkyBlue
+deactivate LC
+
+deactivate LC
+@enduml

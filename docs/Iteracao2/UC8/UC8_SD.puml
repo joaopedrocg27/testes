@@ -1,0 +1,145 @@
+@startuml
+autonumber
+hide footbox
+actor "Colaborador de Organização" as ADM
+
+participant ":PublicarTarefaUI" as UI
+participant ":PublicarTarefaController" as CTRL
+participant "AplicacaoPOT" as _APP
+participant "app\n:AplicacaoPOT" as APP
+participant "sessao\n:SessaoUtilizador" as SESSAO
+participant ":Plataforma" as PLAT
+participant "rorg\n:RegistoOrganizacoes" as RORGS
+participant "rreg\n:RegistoTiposRegimento" as RREG
+participant "org\n:Organizacao" as ORG
+participant "c\n:Colaborador" as COLAB
+participant "regA\n:RegistoAnuncios" as REGA
+participant "ltarefas\n:ListaTarefas" as LTASKS
+participant "tarefa\n:Tarefa" as TAREFA
+participant "anu\n:Anuncio" as ANU
+
+activate ADM
+ADM -> UI : inicia a publicação de uma tarefa
+activate UI
+
+UI -> CTRL : lstT=getTarefasParaPublicar()
+activate CTRL
+
+CTRL -> _APP: app = getInstance()
+activate _APP
+|||
+deactivate _APP
+
+CTRL -> APP: sessao = getSessaoAtual()
+activate APP
+|||
+deactivate APP
+
+CTRL -> SESSAO: email = getEmailUtilizador()
+activate SESSAO
+|||
+deactivate SESSAO
+
+CTRL -> PLAT: rorg = getRegistoOrganizacoes()
+activate PLAT
+deactivate PLAT
+
+CTRL -> RORGS: org = getOrganizacaoByEmailUtilizador(email)
+activate RORGS
+deactivate RORGS
+
+CTRL -> ORG: c=getColaboradorByEmail(email)
+activate ORG
+deactivate ORG
+
+CTRL -> ORG: ltarefas=getListaTarefas()
+activate ORG
+deactivate ORG
+
+CTRL -> LTASKS: lstT=getTarefasParaPublicar(c)
+activate LTASKS
+deactivate LTASKS
+deactivate CTRL
+
+UI --> ADM : mostra a lista de tarefas para publicação e pede para selecionar uma
+deactivate UI
+
+ADM -> UI : seleciona a tarefa
+activate UI
+
+UI -> CTRL : selecionaTarefa(ref)
+activate CTRL
+
+CTRL -> LTASKS: tarefa=getTarefaParaPublicarByRef(ref, c)
+activate LTASKS
+deactivate LTASKS
+deactivate CTRL
+
+UI --> ADM : solicita os dados \n((i.e. período de publicitação, período de apresentação de candidaturas, \nperíodo de seriação, período de decisão e tipo de regimento)
+deactivate UI
+
+ADM -> UI : introduz os dados solicitados
+activate UI
+
+UI -> CTRL: ltreg = getTiposRegimento()
+activate CTRL
+CTRL -> PLAT: rreg = getRegistoTiposRegimento()
+activate PLAT
+deactivate PLAT
+
+CTRL -> RREG : ltreg = getTiposRegimento()
+activate RREG
+deactivate RREG
+deactivate CTRL
+
+UI --> ADM: mostra tipos regimento e pede para selecionar uma
+deactivate UI
+
+ADM -> UI: seleciona tipo regimento
+activate UI
+UI -> CTRL : novoAnuncio(dtIniP,dtFimP,dtIniC,dtFimC,dtIniS,dtFimS,desTR)
+activate CTRL
+
+CTRL -> RREG : regT = getTipoRegimentoByDesc(descTR)
+activate RREG
+deactivate RREG
+
+CTRL -> PLAT: regA = getRegistoAnuncios()
+activate PLAT
+deactivate PLAT
+
+CTRL -> REGA : anu=novoAnuncio(c, tarefa,dtIniP,dtFimP,dtIniC,dtFimC,dtIniS,dtFimS,regT)
+activate REGA
+
+REGA --> ANU ** : create(c, tarefa,dtIniP,dtFimP,dtIniC,dtFimC,dtIniS,dtFimS,regT)
+deactivate REGA
+
+CTRL -> REGA : validaAnuncio(anu)
+activate REGA
+deactivate REGA
+deactivate CTRL
+
+UI --> ADM: apresenta os dados e solicita confirmação
+deactivate UI
+
+ADM -> UI : confirma os dados
+activate UI
+
+UI -> CTRL : registaAnuncio()
+activate CTRL
+
+CTRL -> REGA : registaAnuncio(anu)
+activate REGA
+REGA -> REGA : validaAnuncio(anu)
+REGA -> TAREFA : publicar(anu)
+activate TAREFA
+deactivate TAREFA
+REGA -> REGA: addAnuncio(anu)
+
+deactivate REGA
+deactivate CTRL
+
+UI --> ADM : informa do sucesso da operação
+deactivate ADM
+
+@enduml

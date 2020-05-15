@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="382px" preserveAspectRatio="none" style="width:768px;height:382px;" version="1.1" viewBox="0 0 768 382" width="768px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="frimxcd80jvev" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <rect fill="#FFFFFF" filter="url(#frimxcd80jvev)" height="182.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="105.5" y="96.4883"/>
+        <rect fill="#FFFFFF" filter="url(#frimxcd80jvev)" height="44.3105" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="720.5" y="117.4883"/>
+        <rect fill="#FFFFFF" filter="url(#frimxcd80jvev)" height="29.3105" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="720.5" y="191.4199"/>
+        <rect fill="#FFFFFF" filter="url(#frimxcd80jvev)" height="29.3105" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="720.5" y="250.041"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="110" x2="110" y1="86.4883" y2="297.6621"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="725" x2="725" y1="86.4883" y2="297.6621"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="199" x="8" y="83.5352">Colaborador de Organização</text>
+        <ellipse cx="110.5" cy="13" fill="#FEFECE" filter="url(#frimxcd80jvev)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M110.5,21 L110.5,48 M97.5,29 L123.5,29 M110.5,48 L97.5,63 M110.5,48 L123.5,63 " fill="#FEFECE" filter="url(#frimxcd80jvev)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="199" x="8" y="310.1973">Colaborador de Organização</text>
+        <ellipse cx="110.5" cy="323.1504" fill="#FEFECE" filter="url(#frimxcd80jvev)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M110.5,331.1504 L110.5,358.1504 M97.5,339.1504 L123.5,339.1504 M110.5,358.1504 L97.5,373.1504 M110.5,358.1504 L123.5,373.1504 " fill="#FEFECE" filter="url(#frimxcd80jvev)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <rect fill="#FEFECE" filter="url(#frimxcd80jvev)" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="71" x="688" y="51"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="57" x="695" y="71.5352">:Sistema</text>
+        <rect fill="#FEFECE" filter="url(#frimxcd80jvev)" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="71" x="688" y="296.6621"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="57" x="695" y="317.1973">:Sistema</text>
+        <rect fill="#FFFFFF" filter="url(#frimxcd80jvev)" height="182.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="105.5" y="96.4883"/>
+        <rect fill="#FFFFFF" filter="url(#frimxcd80jvev)" height="44.3105" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="720.5" y="117.4883"/>
+        <rect fill="#FFFFFF" filter="url(#frimxcd80jvev)" height="29.3105" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="720.5" y="191.4199"/>
+        <rect fill="#FFFFFF" filter="url(#frimxcd80jvev)" height="29.3105" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="720.5" y="250.041"/>
+        <polygon fill="#A80036" points="708.5,113.4883,718.5,117.4883,708.5,121.4883,712.5,117.4883" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="115.5" x2="714.5" y1="117.4883" y2="117.4883"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="9" x="122.5" y="113.0566">1</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="224" x="135.5" y="113.0566">inicia a especificação de uma tarefa</text>
+        <polygon fill="#A80036" points="126.5,157.7988,116.5,161.7988,126.5,165.7988,122.5,161.7988" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="120.5" x2="724.5" y1="161.7988" y2="161.7988"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="9" x="132.5" y="150.0225">2</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="145.5" y="142.3672">solicita os dados</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="568" x="145.5" y="157.6777">(referência, designação, descrição informal e de caráter técnico, duração, custo, categoria)</text>
+        <polygon fill="#A80036" points="708.5,187.4199,718.5,191.4199,708.5,195.4199,712.5,191.4199" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="115.5" x2="714.5" y1="191.4199" y2="191.4199"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="9" x="122.5" y="186.9883">3</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="187" x="135.5" y="186.9883">introduz os dados solicitados</text>
+        <polygon fill="#A80036" points="126.5,216.7305,116.5,220.7305,126.5,224.7305,122.5,220.7305" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="120.5" x2="724.5" y1="220.7305" y2="220.7305"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="9" x="132.5" y="216.2988">4</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="265" x="145.5" y="216.2988">apresenta os dados e solicita confirmação</text>
+        <polygon fill="#A80036" points="708.5,246.041,718.5,250.041,708.5,254.041,712.5,250.041" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="115.5" x2="714.5" y1="250.041" y2="250.041"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="9" x="122.5" y="245.6094">5</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="117" x="135.5" y="245.6094">confirma os dados</text>
+        <polygon fill="#A80036" points="121.5,275.3516,111.5,279.3516,121.5,283.3516,117.5,279.3516" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="115.5" x2="724.5" y1="279.3516" y2="279.3516"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="9" x="127.5" y="274.9199">6</text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="204" x="140.5" y="274.9199">informa do sucesso da operação</text>
+        <!--
+@startuml
+autonumber
+actor "Colaborador de Organização" as COL
+
+activate COL
+COL -> ":Sistema" : inicia a especificação de uma tarefa
+activate ":Sistema"
+":Sistema" - -> COL : solicita os dados \n(referência, designação, descrição informal e de caráter técnico, duração, custo, categoria)
+deactivate ":Sistema"
+
+COL -> ":Sistema" : introduz os dados solicitados
+activate ":Sistema"
+":Sistema" - -> COL : apresenta os dados e solicita confirmação
+deactivate ":Sistema"
+
+COL -> ":Sistema" : confirma os dados
+activate ":Sistema"
+":Sistema" - -> COL : informa do sucesso da operação
+deactivate ":Sistema"
+
+deactivate COL
+
+@enduml
+
+PlantUML version 2017.11(Wed Apr 19 17:18:59 WEST 2017)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_241-b07
+Operating System: Mac OS X
+OS Version: 10.13.6
+Default Encoding: UTF-8
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

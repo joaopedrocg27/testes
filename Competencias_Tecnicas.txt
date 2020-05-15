@@ -1,0 +1,11 @@
+Código;Descrição Breve;Descrição Detalhada;Area de Atividade Codigo;
+1232;Roubo;Roubo de Gomas;1234;
+1;mau
+2;mediano
+3;bom
+ProximaGP
+123456;Futebol;Defesa Esquerdo;567890;
+1;manco
+2;semi manco
+3;dois pes esquerdos
+4;bom

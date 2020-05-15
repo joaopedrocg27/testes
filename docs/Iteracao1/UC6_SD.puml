@@ -1,0 +1,99 @@
+@startuml
+autonumber
+'hide footbox
+actor "Colaborador de Organização" as ADM
+
+participant ":EspecificarTarefaUI" as UI
+participant ":EspecificarTarefaController" as CTRL
+participant "AplicacaoPOT" as _APP
+participant "app\n:AplicacaoPOT" as APP
+participant "sessao\n:SessaoUtilizador" as SESSAO
+participant ":Plataforma" as PLAT
+participant "org\n:Organizacao" as ORG
+participant "tarefa\n:Tarefa" as TAREFA
+participant "lc\n:List<Categoria>" as LIST_CAT
+
+activate ADM
+ADM -> UI : inicia a especificação de uma tarefa
+activate UI
+UI --> ADM : solicita os dados \n(i.e. referência única por organização, designação, descrição informal e de caráter técnico, estimativa de duração e custo)
+deactivate UI
+
+ADM -> UI : introduz os dados solicitados
+activate UI
+
+UI -> CTRL : lc=getCategorias()
+activate CTRL
+
+CTRL -> PLAT : lc=getCategorias()
+activate PLAT
+|||
+deactivate PLAT
+deactivate CTRL
+
+UI --> ADM : mostra a lista de categorias e pede para selecionar uma
+deactivate PLAT
+deactivate UI
+
+ADM -> UI : seleciona uma categoria
+activate UI
+
+UI -> CTRL : novaTarefa(ref,dsig,dsInf,dsTec,duracEst,custoEst,catId)
+activate CTRL
+
+CTRL -> PLAT : cat=getCategoriaById(catId)
+activate PLAT
+|||
+deactivate PLAT
+
+CTRL -> _APP: app = getInstance()
+activate _APP
+|||
+deactivate _APP
+
+CTRL -> APP: sessao = getSessaoAtual()
+activate APP
+|||
+deactivate APP
+
+CTRL -> SESSAO: email = getEmailUtilizador()
+activate SESSAO
+|||
+deactivate SESSAO
+
+CTRL -> PLAT: org = getOrganizacaoByEmailUtilizador(email)
+activate PLAT
+|||
+deactivate PLAT
+
+CTRL -> ORG: tarefa=novaTarefa(ref,dsig,dsInf,dsTec,duracEst,custoEst,cat)
+activate ORG
+
+ORG --> TAREFA**: create(ref,dsig,dsInf,dsTec,duracEst,custoEst,cat)
+ORG -> ORG: validaTarefa(tarefa)
+
+UI --> ADM: apresenta os dados e solicita confirmação
+deactivate ORG
+deactivate PLAT
+deactivate CTRL
+deactivate UI
+
+ADM -> UI : confirma os dados
+activate UI
+UI -> CTRL : registaTarefa()
+activate CTRL
+
+CTRL -> ORG : registaTarefa(tarefa)
+activate ORG
+
+ORG -> ORG: validaTarefa(tarefa)
+ORG -> ORG: addTarefa(tarefa)
+
+UI --> ADM : informa do sucesso da operação
+deactivate ORG
+deactivate CTRL
+deactivate UI
+
+deactivate ADM
+
+@enduml

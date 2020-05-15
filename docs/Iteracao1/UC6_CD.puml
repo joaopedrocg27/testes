@@ -1,0 +1,72 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class AplicacaoPOT
+{
+  +static getInstance()
+  +getSessaoAtual()
+}
+
+class SessaoUtilizador
+{
+  +getEmailUtilizador()
+}
+
+class Tarefa {
+  -String referencia
+  -String designacao
+  -String descInformal
+  -String descTecnica
+  -Integer duracaoEst
+  -Double custoEst
+  +Tarefa(ref, dsig, dsInf, dsTec, duracEst, custoEst, cat)
+}
+
+class Categoria {
+  -String id
+  -String descricao
+}
+
+class Organizacao {
+  -String nome
+  -String NIF
+  -String website
+  -String telefone
+  -String email
+  +Organizacao(nome, NIF, webSite, telefone, email, endereco, gestorColaborador)
+  +novaTarefa(ref, dsig, dsInf, dsTec, duracEst, custoEst, cat)
+  +registaTarefa(tarefa)
+  -addTarefa(tarefa)
+  -validaTarefa(tarefa)
+}
+
+class Plataforma {
+  -String designacao
+  +getCategorias()
+  +getCategoriaById(catId)
+  +getOrganizacaoByEmailUtilizador(email)
+}
+
+class EspecificarTarefaController {
+  +getCategorias()
+  +novaTarefa(ref, dsig, dsTec, duracEst, custoEst, catId)
+  +registaTarefa()
+}
+
+class EspecificarTarefaUI {
+
+}
+
+EspecificarTarefaUI ..> EspecificarTarefaController
+EspecificarTarefaController ..> Plataforma
+EspecificarTarefaController ..> Categoria
+EspecificarTarefaController ..> Tarefa
+EspecificarTarefaController ..> Organizacao
+EspecificarTarefaController ..> AplicacaoPOT
+EspecificarTarefaController ..> SessaoUtilizador
+Tarefa "*" -> "1" Categoria : enquadra-se em
+Plataforma "1" --> "*" Categoria : possui
+Organizacao "1" --> "*" Tarefa : possui
+
+
+@enduml

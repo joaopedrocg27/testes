@@ -1,0 +1,55 @@
+@startuml
+hide methods
+left to right direction
+skinparam classAttributeIconSize 0
+
+
+class Plataforma {
+  -String designacao
+}
+
+class Organizacao {
+  -String nome
+  -String NIF
+  -String website
+  -String telefone
+  -String email
+}
+
+class Tarefa {
+  -String referencia
+  -String designcao
+  -String descInformal
+  -String descTecnica
+  -Integer duracaoEst
+  -Double custoEst
+}
+
+class Categoria {
+  -String id
+  -String descricao
+}
+
+class Colaborador {
+  -String nome
+  -String funcao
+  -String telefone
+  -String email
+}
+
+class Utilizador {
+  -String nome
+  -String email
+  -String password
+}
+
+Plataforma "1" -- "*" Organizacao : tem registadas >
+Plataforma "1" -- "*" Categoria : possui >
+Organizacao "1" -- "*" Tarefa: possui >
+Colaborador "1" -- "*" Tarefa: especificada por <
+Colaborador "0..1" -- "1" Utilizador: atua como >
+Tarefa "*" -- "1" Categoria: enquadra-se em >
+Organizacao "1" -- "1..*" Colaborador : tem >
+
+
+@enduml

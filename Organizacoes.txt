@@ -1,0 +1,4 @@
+Nome Organização;NIF;Website;Telefone;Email;Local;Codigo Postal;Localidade;Nome Gestor;Função Gestor;Email Gestor;Telefone Gestor;
+
+NASA;123456789;www.NASA.com;+935271930;nasa@gmail.com;EU;332-1234;Washington;Harry;Colaborador;harrypooter@gmail.com;917205501;
+Chocapic;194805880;www.chocapic.com;934235021;chocapic@gmail.com;Portugal;4460-356;Senhora da Hora;Jordao;Colaborador;jordao@gmail.com;912345378;

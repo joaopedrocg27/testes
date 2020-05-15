@@ -1,0 +1,89 @@
+@startuml
+autonumber
+'hide footbox
+actor "Administrativo" as ADM
+
+participant ":DefinirCategoriaUI" as UI
+participant ":DefinircategoriaController" as CTRL
+participant ":Plataforma" as PLAT
+participant "la\n:List<AreaAtividade>" as LIST_AT
+participant "at\n:AreaAtividade" as AT
+participant "cat\n:Categoria" as CAT
+participant "lct\n:List<CompetenciaTecnica>" as LIST_CT
+participant "ct:\nCompetenciaTecnica" as CT
+participant "cct\n:CaraterCT" as CARACT_CT
+
+
+activate ADM
+
+ADM -> UI : inicia a definição de nova categoria de tarefa
+activate UI
+UI --> ADM : solicita a descrição
+deactivate UI
+
+ADM -> UI : introduz a descrição solicitada
+activate UI
+UI -> CTRL : la=getListaAT()
+activate CTRL
+CTRL -> PLAT : la=getListaAT()
+activate PLAT
+deactivate PLAT
+deactivate CTRL
+UI --> ADM : mostra lista de AT e solicita escolha de uma delas
+deactivate UI
+
+ADM -> UI : seleciona uma AT
+activate UI
+UI -> CTRL : lct=novaCategoria(desc,atCod)
+activate CTRL
+CTRL -> PLAT : at=getAT(atCod)
+activate PLAT
+deactivate PLAT
+CTRL -> PLAT : cat=novaCategoria(desc,at)
+activate PLAT
+PLAT -> PLAT : catId=geraCategoriaId()
+PLAT --> CAT** : create(catId,desc,at)
+deactivate PLAT
+CTRL -> PLAT : lct=getListaCT(at)
+activate PLAT
+deactivate PLAT
+deactivate CTRL
+loop
+UI --> ADM : mostra lista de CT e solicita escolha de CT e respectivo caráter
+deactivate UI
+
+ADM -> UI : seleciona uma CT e respectivo caráter
+activate UI
+UI -> CTRL : addCaraterCT(ctCod,ob)
+activate CTRL
+CTRL -> PLAT : ct=getCT(ctCod)
+activate PLAT
+deactivate PLAT
+CTRL -> CAT : addCaraterCT(ct,ob)
+activate CAT
+CAT --> CARACT_CT** : create(ct,ob)
+CAT -> CAT : validaCaraterCT(cct)
+CAT -> CAT : addCaraterCT(cct)
+deactivate CAT
+|||
+deactivate CTRL
+end loop
+UI --> ADM : apresenta dados e solicita confirmação
+deactivate UI
+
+ADM -> UI : confirma
+activate UI
+UI -> CTRL : registaCategoria()
+activate CTRL
+CTRL -> PLAT : registaCategoria(cat)
+activate PLAT
+PLAT -> PLAT : validaCategoria(cat)
+PLAT -> PLAT : addCategoria(cat)
+UI --> ADM : informa sucesso da operação
+deactivate CTRL
+deactivate PLAT
+deactivate UI
+
+deactivate ADM
+
+@enduml

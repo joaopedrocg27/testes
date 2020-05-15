@@ -1,0 +1,4 @@
+Id;Título;Descrição;
+
+123;Seriacao 1;Maior media dos niveis de proficiencia em cada uma das competencias tecnicas exigidas para a tarefa -> Preco mais baixo -> Proposta registada mais cedo;
+456;Seriacao 2;Maior media dos niveis de proficiencia em cada uma das competencias tecnicas exigidas para a tarefa -> Menor desvio padrao dos niveis de	proficiencia em	cada uma das competencias tecnicas exigidas para a tarefa -> Preco mais baixo -> Proposta registada mais cedo;

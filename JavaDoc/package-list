@@ -1,0 +1,13 @@
+pt.ipp.isep.dei.esoft.Adapter
+pt.ipp.isep.dei.esoft.autorizacao
+pt.ipp.isep.dei.esoft.autorizacao.model
+pt.ipp.isep.dei.esoft.pot.FileInput
+pt.ipp.isep.dei.esoft.pot.LocalData
+pt.ipp.isep.dei.esoft.pot.Seriacao
+pt.ipp.isep.dei.esoft.pot.controller
+pt.ipp.isep.dei.esoft.pot.model
+pt.ipp.isep.dei.esoft.pot.model.Listas
+pt.ipp.isep.dei.esoft.pot.model.Registo
+pt.ipp.isep.dei.esoft.pot.ui
+pt.ipp.isep.dei.esoft.pot.ui.console
+pt.ipp.isep.dei.esoft.pot.ui.console.utils

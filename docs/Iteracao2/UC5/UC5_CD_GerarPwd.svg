@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="354px" preserveAspectRatio="none" style="width:791px;height:354px;" version="1.1" viewBox="0 0 791 354" width="791px" zoomAndPan="magnify"><defs><filter height="300%" id="f1y105xw8jpv4r" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[37bf6c08f758502d5d1a5531d651ab43]
+class AlgoritmoGeradorPasswords--><rect fill="#FEFECE" filter="url(#f1y105xw8jpv4r)" height="59.2207" id="AlgoritmoGeradorPasswords" style="stroke: #A80036; stroke-width: 1.5;" width="273" x="264" y="14"/><ellipse cx="314.25" cy="33.1328" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M310.6777,29.3979 L310.6777,27.2397 L318.0571,27.2397 L318.0571,29.3979 L315.5918,29.3979 L315.5918,37.4746 L318.0571,37.4746 L318.0571,39.6328 L310.6777,39.6328 L310.6777,37.4746 L313.1431,37.4746 L313.1431,29.3979 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="62" x="385.75" y="30.6016">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="164" x="334.75" y="44.7344">AlgoritmoGeradorPasswords</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="265" x2="536" y1="52.2656" y2="52.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="261" x="270" y="66.9004">+String geraPassword(String nome, String email)</text><path d="M6,8 L6,79.2422 A0,0 0 0 0 6,79.2422 L229,79.2422 A0,0 0 0 0 229,79.2422 L229,47.5 L263.96,43.5 L229,39.5 L229,18 L219,8 L6,8 A0,0 0 0 0 6,8 " fill="#FBFB77" filter="url(#f1y105xw8jpv4r)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M219,8 L219,18 L229,18 L219,8 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="145" x="12" y="25.5684">Esta interface será alvo</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="189" x="12" y="40.8789">de multiplas implementações,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="202" x="12" y="56.1895">uma por cada algoritmo externo</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="184" x="12" y="71.5">que tenha que ser suportado.</text><!--MD5=[6e5ff9fcfeb9f23a1698ee53d76f3e0c]
+class AlgoritmoGeradorPasswordsAdapter1--><rect fill="#FEFECE" filter="url(#f1y105xw8jpv4r)" height="52.9551" id="AlgoritmoGeradorPasswordsAdapter1" style="stroke: #A80036; stroke-width: 1.5;" width="273" x="88" y="139"/><ellipse cx="112.9" cy="155" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M115.3731,161.1431 Q114.7921,161.4419 114.1529,161.5913 Q113.5138,161.7407 112.8082,161.7407 Q110.3014,161.7407 108.9815,160.0889 Q107.6617,158.437 107.6617,155.3159 Q107.6617,152.1865 108.9815,150.5347 Q110.3014,148.8828 112.8082,148.8828 Q113.5138,148.8828 114.1612,149.0322 Q114.8087,149.1816 115.3731,149.4805 L115.3731,152.2031 Q114.7423,151.6221 114.1488,151.3523 Q113.5553,151.0825 112.9244,151.0825 Q111.5797,151.0825 110.8949,152.1492 Q110.2101,153.2158 110.2101,155.3159 Q110.2101,157.4077 110.8949,158.4744 Q111.5797,159.541 112.9244,159.541 Q113.5553,159.541 114.1488,159.2712 Q114.7423,159.0015 115.3731,158.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="219" x="129.1" y="159.5352">AlgoritmoGeradorPasswordsAdapter1</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="89" x2="360" y1="171" y2="171"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="261" x="94" y="185.6348">+String geraPassword(String nome, String email)</text><!--MD5=[9615d04c2893a05b5bb041ad0e724e2b]
+class AlgoritmoExterno1API--><rect fill="#FEFECE" filter="url(#f1y105xw8jpv4r)" height="65.9102" id="AlgoritmoExterno1API" style="stroke: #A80036; stroke-width: 1.5;" width="352" x="27.5" y="265"/><ellipse cx="136.75" cy="281" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M139.2231,287.1431 Q138.6421,287.4419 138.0029,287.5913 Q137.3638,287.7407 136.6582,287.7407 Q134.1514,287.7407 132.8315,286.0889 Q131.5117,284.437 131.5117,281.3159 Q131.5117,278.1865 132.8315,276.5347 Q134.1514,274.8828 136.6582,274.8828 Q137.3638,274.8828 138.0112,275.0322 Q138.6587,275.1816 139.2231,275.4805 L139.2231,278.2031 Q138.5923,277.6221 137.9988,277.3523 Q137.4053,277.0825 136.7744,277.0825 Q135.4297,277.0825 134.7449,278.1492 Q134.0601,279.2158 134.0601,281.3159 Q134.0601,283.4077 134.7449,284.4744 Q135.4297,285.541 136.7744,285.541 Q137.4053,285.541 137.9988,285.2712 Q138.5923,285.0015 139.2231,284.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="125" x="157.25" y="285.5352">AlgoritmoExterno1API</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="28.5" x2="378.5" y1="297" y2="297"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="145" x="33.5" y="311.6348">+String randomPassword()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="340" x="33.5" y="324.5898">+String randomPassword(Integer minChars, Integer maxChars)</text><!--MD5=[98fff984016099dc1d2cdb7554a63110]
+class AlgoritmoGeradorPasswordsAdapter2--><rect fill="#FEFECE" filter="url(#f1y105xw8jpv4r)" height="52.9551" id="AlgoritmoGeradorPasswordsAdapter2" style="stroke: #A80036; stroke-width: 1.5;" width="273" x="439" y="139"/><ellipse cx="463.9" cy="155" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M466.3731,161.1431 Q465.7921,161.4419 465.1529,161.5913 Q464.5138,161.7407 463.8082,161.7407 Q461.3014,161.7407 459.9815,160.0889 Q458.6617,158.437 458.6617,155.3159 Q458.6617,152.1865 459.9815,150.5347 Q461.3014,148.8828 463.8082,148.8828 Q464.5138,148.8828 465.1612,149.0322 Q465.8087,149.1816 466.3731,149.4805 L466.3731,152.2031 Q465.7423,151.6221 465.1488,151.3523 Q464.5553,151.0825 463.9244,151.0825 Q462.5797,151.0825 461.8949,152.1492 Q461.2101,153.2158 461.2101,155.3159 Q461.2101,157.4077 461.8949,158.4744 Q462.5797,159.541 463.9244,159.541 Q464.5553,159.541 465.1488,159.2712 Q465.7423,159.0015 466.3731,158.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="219" x="480.1" y="159.5352">AlgoritmoGeradorPasswordsAdapter2</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="440" x2="711" y1="171" y2="171"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="261" x="445" y="185.6348">+String geraPassword(String nome, String email)</text><!--MD5=[c78e3215a40d9e9433c5db1a316bbc7c]
+class AlgoritmoExterno2API--><rect fill="#FEFECE" filter="url(#f1y105xw8jpv4r)" height="91.8203" id="AlgoritmoExterno2API" style="stroke: #A80036; stroke-width: 1.5;" width="366" x="414.5" y="252"/><ellipse cx="530.75" cy="268" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M533.2231,274.1431 Q532.6421,274.4419 532.0029,274.5913 Q531.3638,274.7407 530.6582,274.7407 Q528.1514,274.7407 526.8315,273.0889 Q525.5117,271.437 525.5117,268.3159 Q525.5117,265.1865 526.8315,263.5347 Q528.1514,261.8828 530.6582,261.8828 Q531.3638,261.8828 532.0112,262.0322 Q532.6587,262.1816 533.2231,262.4805 L533.2231,265.2031 Q532.5923,264.6221 531.9988,264.3523 Q531.4053,264.0825 530.7744,264.0825 Q529.4297,264.0825 528.7449,265.1492 Q528.0601,266.2158 528.0601,268.3159 Q528.0601,270.4077 528.7449,271.4744 Q529.4297,272.541 530.7744,272.541 Q531.4053,272.541 531.9988,272.2712 Q532.5923,272.0015 533.2231,271.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="125" x="551.25" y="272.5352">AlgoritmoExterno2API</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="415.5" x2="779.5" y1="284" y2="284"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="169" x="420.5" y="298.6348">+Password generatePassword()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="420.5" y="311.5898">+Password generatePassword(String feedChars)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="258" x="420.5" y="324.5449">+Paswword generatePassword(Integer strength)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="354" x="420.5" y="337.5">+Paswword generatePassword(Integer strength, String feedChars)</text><!--MD5=[3b4c874dbb4796ab835c6ebf706faa50]
+reverse link AlgoritmoGeradorPasswords to AlgoritmoGeradorPasswordsAdapter1--><path d="M341.76,84.55 C315.49,102.46 285.29,123.05 262.12,138.85 " fill="none" id="AlgoritmoGeradorPasswords&lt;-AlgoritmoGeradorPasswordsAdapter1" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="337.88,78.73,358.34,73.24,345.76,90.29,337.88,78.73" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[864624d3236818d5e14622be9624e107]
+link AlgoritmoGeradorPasswordsAdapter1 to AlgoritmoExterno1API--><path d="M220.35,192.28 C217.25,211.54 212.97,238.14 209.5,259.71 " fill="none" id="AlgoritmoGeradorPasswordsAdapter1-&gt;AlgoritmoExterno1API" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="208.68,264.79,214.0703,256.5472,209.4811,259.8546,206.1737,255.2654,208.68,264.79" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[aea5d5f858740067ee7f45dfccd9fbdf]
+reverse link AlgoritmoGeradorPasswords to AlgoritmoGeradorPasswordsAdapter2--><path d="M459.28,84.81 C485.31,102.66 515.16,123.13 538.09,138.85 " fill="none" id="AlgoritmoGeradorPasswords&lt;-AlgoritmoGeradorPasswordsAdapter2" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="454.95,90.33,442.42,73.24,462.87,78.78,454.95,90.33" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[46349dc8cff6f25e516fc073b0e7ddd9]
+link AlgoritmoGeradorPasswordsAdapter2 to AlgoritmoExterno2API--><path d="M579.85,192.28 C582.47,207.83 585.9,228.17 589.03,246.78 " fill="none" id="AlgoritmoGeradorPasswordsAdapter2-&gt;AlgoritmoExterno2API" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="589.91,251.98,592.3625,242.4414,589.0811,247.0492,584.4733,243.7677,589.91,251.98" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d297fadd75851f2122929de39866f7ee]
+@startuml
+
+skinparam classAttributeIconSize 0
+hide attributes
+
+note left of AlgoritmoGeradorPasswords
+Esta interface será alvo
+de multiplas implementações,
+uma por cada algoritmo externo
+que tenha que ser suportado.
+end note
+
+interface AlgoritmoGeradorPasswords << interface >>
+{
+ +String geraPassword(String nome, String email)
+}
+
+
+class AlgoritmoGeradorPasswordsAdapter1
+{
++String geraPassword(String nome, String email)
+}
+
+class AlgoritmoExterno1API
+{
+    +String randomPassword()
+    +String randomPassword(Integer minChars, Integer maxChars)
+}
+
+AlgoritmoGeradorPasswords <|.. AlgoritmoGeradorPasswordsAdapter1
+AlgoritmoGeradorPasswordsAdapter1 -d->  AlgoritmoExterno1API
+
+class AlgoritmoGeradorPasswordsAdapter2
+{
++String geraPassword(String nome, String email)
+}
+
+class AlgoritmoExterno2API
+{
+    +Password generatePassword()
+    +Password generatePassword(String feedChars)
+    +Paswword generatePassword(Integer strength)
+    +Paswword generatePassword(Integer strength, String feedChars)
+}
+
+AlgoritmoGeradorPasswords <|.. AlgoritmoGeradorPasswordsAdapter2
+AlgoritmoGeradorPasswordsAdapter2 -d->  AlgoritmoExterno2API
+
+
+@enduml
+
+PlantUML version 1.2020.03beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.5+10-b520.38
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: en
+Country: PT
+--></g></svg>

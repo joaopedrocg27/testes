@@ -1,0 +1,4 @@
+Descrição;Codigo Area de Atividade;Codigo Competencia Tecninca;Valor do Grau Proficiencia;Obrigatorio
+Programador;1234
+1232;2;n
+123456;3;s

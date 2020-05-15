@@ -1,0 +1,98 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class EspecificarColaboradorUI {
+}
+
+class EspecificarColaboradorController {
+  +novoColaborador(nome, funcao, tlf, email)
+  +registaColaborador()
+}
+
+class AplicacaoPOT{
+  +{static} getInstance()
+  +getSessaoAtual()
+}
+
+class SessaoUtilizador{
+  +getEmailUtilizador()
+}
+
+class Plataforma {
+  -String designacao
+  +getRegistoOrganizacao()
+  +getAlgoritmoGeradorPwd()
+  +getAutorizacaoFacade()
+}
+
+class RegistoOrganizacoes #DeepSkyBlue {
+  +getOrganizacaoByEmailUtilizador(emailUtlz)
+  +getAlgoritmoGeradorPwd()
+  +getAutorizacaoFacade()
+}
+
+class ListaColaboradores #DeepSkyBlue {
+  + novoColaborador(nome, funcao, tlf, email)
+  +validaColaborador(colab)
+  +registaColaborador(colab)
+  -registaColaboradorComoUtilizador(colab)
+  -addColaborador(colab)
+  -enviaEmail(nome,pwd)
+}
+
+class Colaborador {
+  -String nome
+  -String funcao
+  -String telefone
+  -String email
+  +Colaborador(nome, funcao, tlf, email)
+  +getEmail()
+  +getNome()
+}
+
+class Organizacao {
+  -String nome
+  -String NIF
+  -String website
+  -String telefone
+  -String email
+  +getListaColaboradores()
+  +getAlgoritmoGeradorPwd()
+  +getAutorizacaoFacade()
+}
+
+class AutorizacaoFacade {
+  +registaUtilizadorComPapel(nome,email,pwd,papel)
+}
+
+interface AlgoritmoGeradorPasswords <<interface>> #DeepSkyBlue {
+  +geraPassword(nome,email)
+}
+
+
+EspecificarColaboradorUI ..> EspecificarColaboradorController
+
+EspecificarColaboradorController ..> AplicacaoPOT
+EspecificarColaboradorController ..> SessaoUtilizador
+EspecificarColaboradorController ..> Plataforma
+EspecificarColaboradorController ..> RegistoOrganizacoes
+EspecificarColaboradorController ..> Organizacao
+EspecificarColaboradorController ..> Colaborador
+EspecificarColaboradorController ..> ListaColaboradores
+
+RegistoOrganizacoes "1" -l> "*" Organizacao : possui
+
+Organizacao "1" <--> "1" ListaColaboradores: tem
+
+
+
+ListaColaboradores "1" --u> "1..*" Colaborador : possui
+
+ListaColaboradores ..> AutorizacaoFacade
+ListaColaboradores ..> AlgoritmoGeradorPasswords
+RegistoOrganizacoes ..> Plataforma
+
+
+
+
+@enduml

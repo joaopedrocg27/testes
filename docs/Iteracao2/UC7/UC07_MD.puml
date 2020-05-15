@@ -1,0 +1,50 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide methods
+left to right direction
+
+class Plataforma {
+  -String designacao
+}
+
+class Freelancer {
+  -String nome
+  -String NIF
+  -String telefone
+  -String email
+}
+
+class HabilitacaoAcademica {
+  -String grau
+  -String designacao 
+  -String instituicao 
+  -String media
+}
+
+class ReconhecimentoCompetenciaTecnica {
+  -String data
+  -String competenciaTecnica
+  -String grauProficiencia
+}
+
+class EnderecoPostal {
+  -String local
+  -String codPostal
+  -String localidade
+}
+
+
+class Utilizador {
+  -String nome
+  -String email
+  -String password
+}
+
+
+Plataforma "1" -- "*" Freelancer : tem registados >
+Freelancer "1" -- "0..*" HabilitacaoAcademica: possui >
+Freelancer "1" -- "0..*" ReconhecimentoCompetenciaTecnica: possui >
+Freelancer "1" -- "1" EnderecoPostal: tem  >
+Freelancer "0..1" -- "1" Utilizador: atua como >
+@enduml
+

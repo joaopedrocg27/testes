@@ -1,0 +1,68 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class AplicacaoPOT
+{
+  +static getInstance()
+  +getSessaoAtual()
+}
+
+class SessaoUtilizador
+{
+  +getEmailUtilizador()
+
+}
+
+class Colaborador {
+  -String nome
+  -String funcao
+  -String telefone
+  -String email
+  +Colaborador(nome, funcao, telf, email)
+  +getEmail()
+  +getNome()
+}
+
+class Organizacao {
+  -String nome
+  -String NIF
+  -String website
+  -String telefone
+  -String email
+  +Colaborador novoColaborador(nome, funcao, telf, email)
+  +registaColaborador(colab)
+  +validaColaborador(colab)
+  -addColaborador(colab)
+  -geraPwd()
+}
+
+class Plataforma {
+  -String designacao
+  +getOrganizacaoByEmailUtilizador(emailUtlz)
+}
+
+class EspecificarColaboradorController {
+  +novoColaborador(nome, funcao, telf, email)
+  +registaColaborador()
+}
+
+class EspecificarColaboradorUI {
+
+}
+
+class AutorizacaoFacade {
+  +registaUtilizadorComPapel(nome, email, pwd, papel)
+}
+
+EspecificarColaboradorUI ..> EspecificarColaboradorController
+EspecificarColaboradorController ..> Plataforma
+EspecificarColaboradorController ..> Organizacao
+EspecificarColaboradorController ..> Colaborador
+EspecificarColaboradorController ..> AplicacaoPOT
+EspecificarColaboradorController ..> SessaoUtilizador
+Plataforma "1" --> "*" Organizacao : possui
+Organizacao "1" --> "1" Colaborador : tem gestor
+Organizacao "1" --> "1..*" Colaborador : tem
+Organizacao ..> AutorizacaoFacade
+
+@enduml

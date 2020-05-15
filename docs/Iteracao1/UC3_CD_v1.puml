@@ -1,0 +1,72 @@
+@startuml
+skinparam classAttributeIconSize 0
+left to right direction
+class DefinirCategoriaUI {
+}
+
+class DefinirCategoriaController {
+  +novaCategoria(desc)
+  +setAT(atCod)
+  +addCaraterCT(ctCod,ob)
+  +registaCategoria()
+}
+
+class Plataforma {
+  -designacao
+  +getAT(atCod)
+  +getCT(catCod)
+  +getListaCT()
+  +getListaAT()
+  +novaCategoria(desc)
+  +registaCategoria(cat)
+  -validaCategoria(cat)
+  -geraCategoriaId()
+  -addCategoria(cat)
+}
+
+class CompetenciaTecnica {
+  -codigo
+  -descBreve
+  -descDetalhada
+}
+
+class CaraterCT {
+  -obrigatoria
+  +CaraterCT(ct,ob)
+}
+
+
+class Categoria {
+  -id
+  -descricao
+  +Categoria(id,desc)
+  +setAT(at)
+  +addCaraterCT(ct,ob)
+  +valida()
+  -validaCaraterCT(cct)
+  -addCaraterCT(cct)
+}
+
+class AreaAtividade {
+  -codigo
+  -descBreve
+  -descDetalhada
+}
+
+DefinirCategoriaUI ..> DefinirCategoriaController
+DefinirCategoriaController ..> Plataforma
+DefinirCategoriaController ..> AreaAtividade
+DefinirCategoriaController ..> CompetenciaTecnica
+DefinirCategoriaController ..> Categoria
+Plataforma "1" --> "*" Categoria : possui
+Plataforma "1" --> "*" AreaAtividade : possui
+Plataforma "1" --> "*" CompetenciaTecnica : possui
+CompetenciaTecnica "*" -> "1" AreaAtividade : referente a
+Categoria "*" --> "1" AreaAtividade : tem/requer
+Categoria "1" --> "*" CaraterCT : tem/requer
+CaraterCT "*" -> "1" CompetenciaTecnica : referente a
+
+
+
+
+@enduml

@@ -1,0 +1,46 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class CompetenciaTecnica {
+  -String codigo
+  -String descBreve
+  -String descDetalhada
+  +CompetenciaTecnica(String cod, String dsBreve, String dsDet, AreaAtividade at)
+}
+
+class AreaAtividade {
+  -String codigo
+  -String descBreve
+  -String descDetalhada
+}
+
+class Plataforma {
+  -String designacao
+  +List<AreaAtividade> getAreasAtividade()
+  +AreaAtividade getAreaAtividadeByCod(String atCod)
+  +CompetenciaTecnica novaCompetencia(String cod, String dsBreve, String dsDet, String atCod)
+  +void validaCompetencia(CompetenciaTecnica ct)
+  +void registaCompetencia(CompetenciaTecnica ct)
+  -void addCompetencia(CompetenciaTecnica ct)
+}
+
+class EspecificarCompetenciaTecnicaController {
+  +List<AreaAtividade> getAreasAtividade()
+  +void novaCompetencia(String cod, String dsBreve, String dsDet, String atCod)
+  +void registaCompetencia()
+}
+
+class EspecificarCompetenciaTecnicaUI {
+
+}
+
+EspecificarCompetenciaTecnicaUI ..> EspecificarCompetenciaTecnicaController
+EspecificarCompetenciaTecnicaController ..> Plataforma
+EspecificarCompetenciaTecnicaController ..> AreaAtividade
+EspecificarCompetenciaTecnicaController ..> CompetenciaTecnica
+CompetenciaTecnica "*" -> "1" AreaAtividade : referente
+Plataforma "1" --> "*" AreaAtividade : possui
+Plataforma "1" --> "*" CompetenciaTecnica : possui
+
+
+@enduml

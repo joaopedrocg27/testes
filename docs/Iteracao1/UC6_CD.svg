@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="687px" preserveAspectRatio="none" style="width:1114px;height:687px;" version="1.1" viewBox="0 0 1114 687" width="1114px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1dsck12fzmgyh" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g>
+        <!--MD5=[380d12a68ed0046a60f31008a02875d0]
+class AplicacaoPOT-->
+        <rect fill="#FEFECE" filter="url(#f1dsck12fzmgyh)" height="75.6719" id="AplicacaoPOT" style="stroke: #A80036; stroke-width: 1.5;" width="111" x="516.5" y="323" />
+        <ellipse cx="532.4" cy="339" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M535.1656,334.875 Q535.3219,334.6563 535.5094,334.5469 Q535.6969,334.4375 535.9156,334.4375 Q536.2906,334.4375 536.525,334.7031 Q536.7594,334.9531 536.7594,335.5625 L536.7594,337.0156 Q536.7594,337.625 536.525,337.8906 Q536.2906,338.1563 535.9156,338.1563 Q535.5719,338.1563 535.3688,337.9531 Q535.1656,337.7656 535.0563,337.25 Q535.0094,336.8906 534.8219,336.7031 Q534.4938,336.3281 533.8844,336.1094 Q533.275,335.8906 532.65,335.8906 Q531.8844,335.8906 531.2438,336.2188 Q530.6188,336.5469 530.1188,337.2969 Q529.6344,338.0469 529.6344,339.0781 L529.6344,340.1719 Q529.6344,341.4063 530.525,342.2344 Q531.4156,343.0469 533.0094,343.0469 Q533.9469,343.0469 534.6031,342.7969 Q534.9938,342.6406 535.4156,342.2031 Q535.6813,341.9375 535.8219,341.8594 Q535.9781,341.7813 536.1813,341.7813 Q536.5094,341.7813 536.7594,342.0469 Q537.025,342.2969 537.025,342.6406 Q537.025,342.9844 536.6813,343.3906 Q536.1813,343.9688 535.3844,344.2969 Q534.3063,344.75 533.0094,344.75 Q531.4938,344.75 530.2906,344.125 Q529.3063,343.625 528.6188,342.5625 Q527.9313,341.4844 527.9313,340.2031 L527.9313,339.0469 Q527.9313,337.7188 528.5406,336.5781 Q529.1656,335.4219 530.2594,334.8125 Q531.3531,334.1875 532.5875,334.1875 Q533.3219,334.1875 533.9625,334.3594 Q534.6188,334.5156 535.1656,334.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="546.6" y="343.9102">AplicacaoPOT</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="517.5" x2="626.5" y1="355" y2="355" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="517.5" x2="626.5" y1="363" y2="363" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="522.5" y="378.4189">+static getInstance()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="522.5" y="392.2549">+getSessaoAtual()</text>
+        <!--MD5=[1e13576e8c070e32200b62ceaa1f39ec]
+class SessaoUtilizador-->
+        <rect fill="#FEFECE" filter="url(#f1dsck12fzmgyh)" height="61.8359" id="SessaoUtilizador" style="stroke: #A80036; stroke-width: 1.5;" width="126" x="663" y="330" />
+        <ellipse cx="678" cy="346" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M680.7656,341.875 Q680.9219,341.6563 681.1094,341.5469 Q681.2969,341.4375 681.5156,341.4375 Q681.8906,341.4375 682.125,341.7031 Q682.3594,341.9531 682.3594,342.5625 L682.3594,344.0156 Q682.3594,344.625 682.125,344.8906 Q681.8906,345.1563 681.5156,345.1563 Q681.1719,345.1563 680.9688,344.9531 Q680.7656,344.7656 680.6563,344.25 Q680.6094,343.8906 680.4219,343.7031 Q680.0938,343.3281 679.4844,343.1094 Q678.875,342.8906 678.25,342.8906 Q677.4844,342.8906 676.8438,343.2188 Q676.2188,343.5469 675.7188,344.2969 Q675.2344,345.0469 675.2344,346.0781 L675.2344,347.1719 Q675.2344,348.4063 676.125,349.2344 Q677.0156,350.0469 678.6094,350.0469 Q679.5469,350.0469 680.2031,349.7969 Q680.5938,349.6406 681.0156,349.2031 Q681.2813,348.9375 681.4219,348.8594 Q681.5781,348.7813 681.7813,348.7813 Q682.1094,348.7813 682.3594,349.0469 Q682.625,349.2969 682.625,349.6406 Q682.625,349.9844 682.2813,350.3906 Q681.7813,350.9688 680.9844,351.2969 Q679.9063,351.75 678.6094,351.75 Q677.0938,351.75 675.8906,351.125 Q674.9063,350.625 674.2188,349.5625 Q673.5313,348.4844 673.5313,347.2031 L673.5313,346.0469 Q673.5313,344.7188 674.1406,343.5781 Q674.7656,342.4219 675.8594,341.8125 Q676.9531,341.1875 678.1875,341.1875 Q678.9219,341.1875 679.5625,341.3594 Q680.2188,341.5156 680.7656,341.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="94" x="692" y="350.9102">SessaoUtilizador</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="664" x2="788" y1="362" y2="362" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="664" x2="788" y1="370" y2="370" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="669" y="385.4189">+getEmailUtilizador()</text>
+        <!--MD5=[27c2d4bbe9f7b9d3b0ea2797cc54308a]
+class Tarefa-->
+        <rect fill="#FEFECE" filter="url(#f1dsck12fzmgyh)" height="144.8516" id="Tarefa" style="stroke: #A80036; stroke-width: 1.5;" width="282" x="322" y="532" />
+        <ellipse cx="441.25" cy="548" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M444.0156,543.875 Q444.1719,543.6563 444.3594,543.5469 Q444.5469,543.4375 444.7656,543.4375 Q445.1406,543.4375 445.375,543.7031 Q445.6094,543.9531 445.6094,544.5625 L445.6094,546.0156 Q445.6094,546.625 445.375,546.8906 Q445.1406,547.1563 444.7656,547.1563 Q444.4219,547.1563 444.2188,546.9531 Q444.0156,546.7656 443.9063,546.25 Q443.8594,545.8906 443.6719,545.7031 Q443.3438,545.3281 442.7344,545.1094 Q442.125,544.8906 441.5,544.8906 Q440.7344,544.8906 440.0938,545.2188 Q439.4688,545.5469 438.9688,546.2969 Q438.4844,547.0469 438.4844,548.0781 L438.4844,549.1719 Q438.4844,550.4063 439.375,551.2344 Q440.2656,552.0469 441.8594,552.0469 Q442.7969,552.0469 443.4531,551.7969 Q443.8438,551.6406 444.2656,551.2031 Q444.5313,550.9375 444.6719,550.8594 Q444.8281,550.7813 445.0313,550.7813 Q445.3594,550.7813 445.6094,551.0469 Q445.875,551.2969 445.875,551.6406 Q445.875,551.9844 445.5313,552.3906 Q445.0313,552.9688 444.2344,553.2969 Q443.1563,553.75 441.8594,553.75 Q440.3438,553.75 439.1406,553.125 Q438.1563,552.625 437.4688,551.5625 Q436.7813,550.4844 436.7813,549.2031 L436.7813,548.0469 Q436.7813,546.7188 437.3906,545.5781 Q438.0156,544.4219 439.1094,543.8125 Q440.2031,543.1875 441.4375,543.1875 Q442.1719,543.1875 442.8125,543.3594 Q443.4688,543.5156 444.0156,543.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="461.75" y="552.9102">Tarefa</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="323" x2="603" y1="564" y2="564" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="328" y="579.4189">-String referencia</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="328" y="593.2549">-String designacao</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="328" y="607.0908">-String descInformal</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="328" y="620.9268">-String descTecnica</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="328" y="634.7627">-Integer duracaoEst</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="328" y="648.5986">-Double custoEst</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="323" x2="603" y1="655.0156" y2="655.0156" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="270" x="328" y="670.4346">+Tarefa(ref, dsig, dsInf, dsTec, duracEst, custoEst, cat)</text>
+        <!--MD5=[7e1ce8ab2bf669717f28e918f4971b9a]
+class Categoria-->
+        <rect fill="#FEFECE" filter="url(#f1dsck12fzmgyh)" height="75.6719" id="Categoria" style="stroke: #A80036; stroke-width: 1.5;" width="95" x="794.5" y="566.5" />
+        <ellipse cx="813.55" cy="582.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M816.3156,578.375 Q816.4719,578.1563 816.6594,578.0469 Q816.8469,577.9375 817.0656,577.9375 Q817.4406,577.9375 817.675,578.2031 Q817.9094,578.4531 817.9094,579.0625 L817.9094,580.5156 Q817.9094,581.125 817.675,581.3906 Q817.4406,581.6563 817.0656,581.6563 Q816.7219,581.6563 816.5188,581.4531 Q816.3156,581.2656 816.2063,580.75 Q816.1594,580.3906 815.9719,580.2031 Q815.6438,579.8281 815.0344,579.6094 Q814.425,579.3906 813.8,579.3906 Q813.0344,579.3906 812.3938,579.7188 Q811.7688,580.0469 811.2688,580.7969 Q810.7844,581.5469 810.7844,582.5781 L810.7844,583.6719 Q810.7844,584.9063 811.675,585.7344 Q812.5656,586.5469 814.1594,586.5469 Q815.0969,586.5469 815.7531,586.2969 Q816.1438,586.1406 816.5656,585.7031 Q816.8313,585.4375 816.9719,585.3594 Q817.1281,585.2813 817.3313,585.2813 Q817.6594,585.2813 817.9094,585.5469 Q818.175,585.7969 818.175,586.1406 Q818.175,586.4844 817.8313,586.8906 Q817.3313,587.4688 816.5344,587.7969 Q815.4563,588.25 814.1594,588.25 Q812.6438,588.25 811.4406,587.625 Q810.4563,587.125 809.7688,586.0625 Q809.0813,584.9844 809.0813,583.7031 L809.0813,582.5469 Q809.0813,581.2188 809.6906,580.0781 Q810.3156,578.9219 811.4094,578.3125 Q812.5031,577.6875 813.7375,577.6875 Q814.4719,577.6875 815.1125,577.8594 Q815.7688,578.0156 816.3156,578.375 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54" x="828.45" y="587.4102">Categoria</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="795.5" x2="888.5" y1="598.5" y2="598.5" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="800.5" y="613.9189">-String id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="800.5" y="627.7549">-String descricao</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="795.5" x2="888.5" y1="634.1719" y2="634.1719" />
+        <!--MD5=[807977ceb130c090ed5febfb6de2bdea]
+class Organizacao-->
+        <rect fill="#FEFECE" filter="url(#f1dsck12fzmgyh)" height="186.3594" id="Organizacao" style="stroke: #A80036; stroke-width: 1.5;" width="404" x="6" y="268" />
+        <ellipse cx="169.25" cy="284" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M172.0156,279.875 Q172.1719,279.6563 172.3594,279.5469 Q172.5469,279.4375 172.7656,279.4375 Q173.1406,279.4375 173.375,279.7031 Q173.6094,279.9531 173.6094,280.5625 L173.6094,282.0156 Q173.6094,282.625 173.375,282.8906 Q173.1406,283.1563 172.7656,283.1563 Q172.4219,283.1563 172.2188,282.9531 Q172.0156,282.7656 171.9063,282.25 Q171.8594,281.8906 171.6719,281.7031 Q171.3438,281.3281 170.7344,281.1094 Q170.125,280.8906 169.5,280.8906 Q168.7344,280.8906 168.0938,281.2188 Q167.4688,281.5469 166.9688,282.2969 Q166.4844,283.0469 166.4844,284.0781 L166.4844,285.1719 Q166.4844,286.4063 167.375,287.2344 Q168.2656,288.0469 169.8594,288.0469 Q170.7969,288.0469 171.4531,287.7969 Q171.8438,287.6406 172.2656,287.2031 Q172.5313,286.9375 172.6719,286.8594 Q172.8281,286.7813 173.0313,286.7813 Q173.3594,286.7813 173.6094,287.0469 Q173.875,287.2969 173.875,287.6406 Q173.875,287.9844 173.5313,288.3906 Q173.0313,288.9688 172.2344,289.2969 Q171.1563,289.75 169.8594,289.75 Q168.3438,289.75 167.1406,289.125 Q166.1563,288.625 165.4688,287.5625 Q164.7813,286.4844 164.7813,285.2031 L164.7813,284.0469 Q164.7813,282.7188 165.3906,281.5781 Q166.0156,280.4219 167.1094,279.8125 Q168.2031,279.1875 169.4375,279.1875 Q170.1719,279.1875 170.8125,279.3594 Q171.4688,279.5156 172.0156,279.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="69" x="189.75" y="288.9102">Organizacao</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="409" y1="300" y2="300" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="12" y="315.4189">-String nome</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="12" y="329.2549">-String NIF</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="12" y="343.0908">-String website</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="12" y="356.9268">-String telefone</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="12" y="370.7627">-String email</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="409" y1="377.1797" y2="377.1797" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="392" x="12" y="392.5986">+Organizacao(nome, NIF, webSite, telefone, email, endereco, gestorColaborador)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="294" x="12" y="406.4346">+novaTarefa(ref, dsig, dsInf, dsTec, duracEst, custoEst, cat)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="12" y="420.2705">+registaTarefa(tarefa)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="12" y="434.1064">-addTarefa(tarefa)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="12" y="447.9424">-validaTarefa(tarefa)</text>
+        <!--MD5=[ecaed46f78f8cfe1e9ce18477649be18]
+class Plataforma-->
+        <rect fill="#FEFECE" filter="url(#f1dsck12fzmgyh)" height="103.3438" id="Plataforma" style="stroke: #A80036; stroke-width: 1.5;" width="208" x="895" y="309.5" />
+        <ellipse cx="964.75" cy="325.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M967.5156,321.375 Q967.6719,321.1563 967.8594,321.0469 Q968.0469,320.9375 968.2656,320.9375 Q968.6406,320.9375 968.875,321.2031 Q969.1094,321.4531 969.1094,322.0625 L969.1094,323.5156 Q969.1094,324.125 968.875,324.3906 Q968.6406,324.6563 968.2656,324.6563 Q967.9219,324.6563 967.7188,324.4531 Q967.5156,324.2656 967.4063,323.75 Q967.3594,323.3906 967.1719,323.2031 Q966.8438,322.8281 966.2344,322.6094 Q965.625,322.3906 965,322.3906 Q964.2344,322.3906 963.5938,322.7188 Q962.9688,323.0469 962.4688,323.7969 Q961.9844,324.5469 961.9844,325.5781 L961.9844,326.6719 Q961.9844,327.9063 962.875,328.7344 Q963.7656,329.5469 965.3594,329.5469 Q966.2969,329.5469 966.9531,329.2969 Q967.3438,329.1406 967.7656,328.7031 Q968.0313,328.4375 968.1719,328.3594 Q968.3281,328.2813 968.5313,328.2813 Q968.8594,328.2813 969.1094,328.5469 Q969.375,328.7969 969.375,329.1406 Q969.375,329.4844 969.0313,329.8906 Q968.5313,330.4688 967.7344,330.7969 Q966.6563,331.25 965.3594,331.25 Q963.8438,331.25 962.6406,330.625 Q961.6563,330.125 960.9688,329.0625 Q960.2813,327.9844 960.2813,326.7031 L960.2813,325.5469 Q960.2813,324.2188 960.8906,323.0781 Q961.5156,321.9219 962.6094,321.3125 Q963.7031,320.6875 964.9375,320.6875 Q965.6719,320.6875 966.3125,320.8594 Q966.9688,321.0156 967.5156,321.375 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="985.25" y="330.4102">Plataforma</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="896" x2="1102" y1="341.5" y2="341.5" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="901" y="356.9189">-String designacao</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="896" x2="1102" y1="363.3359" y2="363.3359" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="901" y="378.7549">+getCategorias()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="901" y="392.5908">+getCategoriaById(catId)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="901" y="406.4268">+getOrganizacaoByEmailUtilizador(email)</text>
+        <!--MD5=[94150fb2341829ef7e29c5b8b7a9ec09]
+class EspecificarTarefaController-->
+        <rect fill="#FEFECE" filter="url(#f1dsck12fzmgyh)" height="89.5078" id="EspecificarTarefaController" style="stroke: #A80036; stroke-width: 1.5;" width="284" x="507" y="117" />
+        <ellipse cx="569.75" cy="133" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M572.5156,128.875 Q572.6719,128.6563 572.8594,128.5469 Q573.0469,128.4375 573.2656,128.4375 Q573.6406,128.4375 573.875,128.7031 Q574.1094,128.9531 574.1094,129.5625 L574.1094,131.0156 Q574.1094,131.625 573.875,131.8906 Q573.6406,132.1563 573.2656,132.1563 Q572.9219,132.1563 572.7188,131.9531 Q572.5156,131.7656 572.4063,131.25 Q572.3594,130.8906 572.1719,130.7031 Q571.8438,130.3281 571.2344,130.1094 Q570.625,129.8906 570,129.8906 Q569.2344,129.8906 568.5938,130.2188 Q567.9688,130.5469 567.4688,131.2969 Q566.9844,132.0469 566.9844,133.0781 L566.9844,134.1719 Q566.9844,135.4063 567.875,136.2344 Q568.7656,137.0469 570.3594,137.0469 Q571.2969,137.0469 571.9531,136.7969 Q572.3438,136.6406 572.7656,136.2031 Q573.0313,135.9375 573.1719,135.8594 Q573.3281,135.7813 573.5313,135.7813 Q573.8594,135.7813 574.1094,136.0469 Q574.375,136.2969 574.375,136.6406 Q574.375,136.9844 574.0313,137.3906 Q573.5313,137.9688 572.7344,138.2969 Q571.6563,138.75 570.3594,138.75 Q568.8438,138.75 567.6406,138.125 Q566.6563,137.625 565.9688,136.5625 Q565.2813,135.4844 565.2813,134.2031 L565.2813,133.0469 Q565.2813,131.7188 565.8906,130.5781 Q566.5156,129.4219 567.6094,128.8125 Q568.7031,128.1875 569.9375,128.1875 Q570.6719,128.1875 571.3125,128.3594 Q571.9688,128.5156 572.5156,128.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="150" x="590.25" y="137.9102">EspecificarTarefaController</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="508" x2="790" y1="149" y2="149" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="508" x2="790" y1="157" y2="157" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="513" y="172.4189">+getCategorias()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="272" x="513" y="186.2549">+novaTarefa(ref, dsig, dsTec, duracEst, custoEst, catId)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="513" y="200.0908">+registaTarefa()</text>
+        <!--MD5=[d165d8d60460acd89e6c0912e03cbc92]
+class EspecificarTarefaUI-->
+        <rect fill="#FEFECE" filter="url(#f1dsck12fzmgyh)" height="48" id="EspecificarTarefaUI" style="stroke: #A80036; stroke-width: 1.5;" width="140" x="579" y="8" />
+        <ellipse cx="594" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M596.7656,19.875 Q596.9219,19.6563 597.1094,19.5469 Q597.2969,19.4375 597.5156,19.4375 Q597.8906,19.4375 598.125,19.7031 Q598.3594,19.9531 598.3594,20.5625 L598.3594,22.0156 Q598.3594,22.625 598.125,22.8906 Q597.8906,23.1563 597.5156,23.1563 Q597.1719,23.1563 596.9688,22.9531 Q596.7656,22.7656 596.6563,22.25 Q596.6094,21.8906 596.4219,21.7031 Q596.0938,21.3281 595.4844,21.1094 Q594.875,20.8906 594.25,20.8906 Q593.4844,20.8906 592.8438,21.2188 Q592.2188,21.5469 591.7188,22.2969 Q591.2344,23.0469 591.2344,24.0781 L591.2344,25.1719 Q591.2344,26.4063 592.125,27.2344 Q593.0156,28.0469 594.6094,28.0469 Q595.5469,28.0469 596.2031,27.7969 Q596.5938,27.6406 597.0156,27.2031 Q597.2813,26.9375 597.4219,26.8594 Q597.5781,26.7813 597.7813,26.7813 Q598.1094,26.7813 598.3594,27.0469 Q598.625,27.2969 598.625,27.6406 Q598.625,27.9844 598.2813,28.3906 Q597.7813,28.9688 596.9844,29.2969 Q595.9063,29.75 594.6094,29.75 Q593.0938,29.75 591.8906,29.125 Q590.9063,28.625 590.2188,27.5625 Q589.5313,26.4844 589.5313,25.2031 L589.5313,24.0469 Q589.5313,22.7188 590.1406,21.5781 Q590.7656,20.4219 591.8594,19.8125 Q592.9531,19.1875 594.1875,19.1875 Q594.9219,19.1875 595.5625,19.3594 Q596.2188,19.5156 596.7656,19.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="108" x="608" y="28.9102">EspecificarTarefaUI</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="580" x2="718" y1="40" y2="40" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="580" x2="718" y1="48" y2="48" />
+        <!--MD5=[05a699340a7c11c92956af905b9d914a]
+link EspecificarTarefaUI to EspecificarTarefaController-->
+        <path d="M649,56.18 C649,71.589 649,92.417 649,111.447 " fill="none" id="EspecificarTarefaUI-&gt;EspecificarTarefaController" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="649,116.761,653,107.761,649,111.761,645,107.761,649,116.761" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[e3097efa8520120091b2f8f83ceb3138]
+link EspecificarTarefaController to Plataforma-->
+        <path d="M791.113,201.091 C817.583,210.915 844.333,222.817 868,237 C898.608,255.342 928.016,281.849 951.187,305.562 " fill="none" id="EspecificarTarefaController-&gt;Plataforma" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="954.851,309.342,951.4589,300.0957,951.3709,305.7519,945.7147,305.6639,954.851,309.342" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[8c1323afb0189c761487270c894887cb]
+link EspecificarTarefaController to Categoria-->
+        <path d="M743.39,207.142 C767.579,222.96 790.978,243.171 806,268 C861.932,360.446 855.955,493.838 848.244,561.186 " fill="none" id="EspecificarTarefaController-&gt;Categoria" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="847.639,566.313,852.6657,557.8435,848.2247,561.3474,844.7208,556.9064,847.639,566.313" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[620cba3c85ccf940fb304a6a59f8b3fa]
+link EspecificarTarefaController to Tarefa-->
+        <path d="M559.935,207.119 C536.407,223.076 513.549,243.366 499,268 C452.38,346.937 449.305,454.739 453.958,526.617 " fill="none" id="EspecificarTarefaController-&gt;Tarefa" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="454.306,531.729,457.6846,522.4778,453.9659,526.7406,449.7031,523.0219,454.306,531.729" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[6eb4a6f4cc5b833adb71bf132ec7c56c]
+link EspecificarTarefaController to Organizacao-->
+        <path d="M512.622,207.047 C487.211,216.254 461.087,226.406 437,237 C417.221,245.699 396.831,255.447 376.749,265.547 " fill="none" id="EspecificarTarefaController-&gt;Organizacao" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="372.198,267.844,382.0349,267.3578,376.6612,265.5902,378.4288,260.2166,372.198,267.844" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[14725f62bbb0dfe4afcd43c22b93cbbf]
+link EspecificarTarefaController to AplicacaoPOT-->
+        <path d="M631.72,207.211 C618.745,240.405 601.095,285.561 588.352,318.165 " fill="none" id="EspecificarTarefaController-&gt;AplicacaoPOT" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="586.508,322.882,593.5102,315.9561,588.3284,318.2252,586.0593,313.0434,586.508,322.882" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[59805cf69ed9e18883a36abb426031fc]
+link EspecificarTarefaController to SessaoUtilizador-->
+        <path d="M666.28,207.211 C680.227,242.892 699.575,292.394 712.426,325.271 " fill="none" id="EspecificarTarefaController-&gt;SessaoUtilizador" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="714.273,329.998,714.7227,320.1594,712.4531,325.341,707.2715,323.0713,714.273,329.998" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[cc2561a0285988b367253361d2d1973d]
+link Tarefa to Categoria-->
+        <path d="M604.126,604.5 C668.699,604.5 741.303,604.5 789.124,604.5 " fill="none" id="Tarefa-&gt;Categoria" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="794.251,604.5,785.251,600.5,789.251,604.5,785.251,608.5,794.251,604.5" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="652.75" y="597.9951">enquadra-se em</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="611.9805" y="601.5713">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="779.4035" y="600.8222">1</text>
+        <!--MD5=[cb8556493ec2c94f9603162dd119feba]
+link Plataforma to Categoria-->
+        <path d="M966.088,412.626 C937.285,456.931 895.951,520.511 869.041,561.906 " fill="none" id="Plataforma-&gt;Categoria" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="866.158,566.34,874.4178,560.9757,868.8838,562.1484,867.7112,556.6144,866.158,566.34" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="916" y="498.4951">possui</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="953.9676" y="434.5066">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="865.0158" y="555.6734">*</text>
+        <!--MD5=[cf2deab2ed1f09cef5b70f58ef028e55]
+link Organizacao to Tarefa-->
+        <path d="M305.496,454.335 C331.36,478.829 358.97,504.978 383.733,528.43 " fill="none" id="Organizacao-&gt;Tarefa" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="387.366,531.87,383.5829,522.7767,383.736,528.4315,378.0813,528.5846,387.366,531.87" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="352" y="498.4951">possui</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="305.9863" y="475.9049">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="374.3084" y="521.0759">*</text>
+        <!--MD5=[764c8ed97f2c8e183c5960c95b004bad]
+@startuml
+skinparam classAttributeIconSize 0
+
+class AplicacaoPOT
+{
+  +static getInstance()
+  +getSessaoAtual()
+}
+
+class SessaoUtilizador
+{
+  +getEmailUtilizador()
+}
+
+class Tarefa {
+  -String referencia
+  -String designacao
+  -String descInformal
+  -String descTecnica
+  -Integer duracaoEst
+  -Double custoEst
+  +Tarefa(ref, dsig, dsInf, dsTec, duracEst, custoEst, cat)
+}
+
+class Categoria {
+  -String id
+  -String descricao
+}
+
+class Organizacao {
+  -String nome
+  -String NIF
+  -String website
+  -String telefone
+  -String email
+  +Organizacao(nome, NIF, webSite, telefone, email, endereco, gestorColaborador)
+  +novaTarefa(ref, dsig, dsInf, dsTec, duracEst, custoEst, cat)
+  +registaTarefa(tarefa)
+  -addTarefa(tarefa)
+  -validaTarefa(tarefa)
+}
+
+class Plataforma {
+  -String designacao
+  +getCategorias()
+  +getCategoriaById(catId)
+  +getOrganizacaoByEmailUtilizador(email)
+}
+
+class EspecificarTarefaController {
+  +getCategorias()
+  +novaTarefa(ref, dsig, dsTec, duracEst, custoEst, catId)
+  +registaTarefa()
+}
+
+class EspecificarTarefaUI {
+
+}
+
+EspecificarTarefaUI ..> EspecificarTarefaController
+EspecificarTarefaController ..> Plataforma
+EspecificarTarefaController ..> Categoria
+EspecificarTarefaController ..> Tarefa
+EspecificarTarefaController ..> Organizacao
+EspecificarTarefaController ..> AplicacaoPOT
+EspecificarTarefaController ..> SessaoUtilizador
+Tarefa "*" -> "1" Categoria : enquadra-se em
+Plataforma "1" - -> "*" Categoria : possui
+Organizacao "1" - -> "*" Tarefa : possui
+
+
+@enduml
+
+PlantUML version 1.2020.01(Sun Feb 16 17:40:32 WET 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Windows 10
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

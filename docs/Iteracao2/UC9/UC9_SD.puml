@@ -1,0 +1,105 @@
+@startuml
+autonumber
+
+actor "Freelancer" as FRL
+participant ":EfectuarCandidaturaUI" as UI
+participant ":EfectuarCandidaturaController" as CTRL
+participant ":Plataforma" as PLAT
+participant "rfree:\nRegistoFreelancer" as RFREEL
+participant "ranu:\nRegistoAnuncios" as RANU
+participant "listaAnu:\n List<Anuncios>" as LSTAE
+participant "anu:\nAnuncio" as ANUN
+participant "freel:\nFreelancer" as FREEL
+participant ":ListaCandidaturas" as LCAND
+participant "cand:\nCandidatura" as CAND
+
+
+note right of LCAND
+este objeto pertence ao anúncio
+indicado como "anu:Anuncio"
+end note
+
+activate FRL
+FRL -> UI : inicia efectuar candidatura
+activate UI
+
+UI -> CTRL : listaAnu = getAnunciosElegiveisDoFreelancer()
+activate CTRL
+
+CTRL -> PLAT: rfree = getRegistoFreelancers()
+activate PLAT
+deactivate PLAT
+
+CTRL -> RFREEL : freel=getFreelancerByEmail(email)
+note right
+O email foi obtido através do objeto
+SessaoUtilizador como demonstrado noutros diagramas.
+end note
+activate RFREEL
+deactivate RFREEL
+
+CTRL -> PLAT: ranu = getRegistoAnuncios()
+activate PLAT
+deactivate PLAT
+
+CTRL -> RANU : listaAnu=getAnunciosElegiveisDoFreelancer(freel)
+activate RANU
+ref over RANU : SD_getAnunciosElegiveisDoFreelancer(freel)
+deactivate RANU
+deactivate CTRL
+
+UI --> FRL : seleccionar anuncio da lista de anuncios elegiveis
+deactivate UI
+FRL -> UI : iniciar candidatura a anuncio elegivel
+activate UI
+UI --> FRL : solicita dados da candidatura \n(valorPrt,nrDias,txtApresentacao,txtMotivacao)
+deactivate UI
+
+FRL -> UI : introduz os dados solicitados \n(valorPrt,nrDias,txtApres,txtMotiv)
+activate UI
+UI -> CTRL : novaCandidatura(anuncioId,valorPrt,nrDias,txtApres,txtMotiv)
+activate CTRL
+
+CTRL -> RANU: anu = getAnuncioById(anuncioId)
+activate RANU
+note right
+O "anuncioId", no limite, pode corresponder à referência da tarefa associada.
+end note
+deactivate RANU
+
+CTRL -> ANUN: cand=novaCandidatura(freel,dataCand,valorPrt,nrDias,txtApres,txtMotiv)
+activate ANUN
+ANUN -> ANUN: aceitaCandidaturas()
+ANUN -> ANUN: éFreelancerElegivel(free)
+activate ANUN
+ref over ANUN : SD_éFreelancerElegivel(freel)
+deactivate ANUN
+ANUN -> LCAND: cand=novaCandidatura(freel,dataCand,valorPrt,nrDias,txtApres,txtMotiv)
+activate LCAND
+LCAND --> CAND**: create(freel,dataCand,valorPrt,nrDias,txtApres,txtMotiv)
+ANUN -> LCAND: validaCandidatura(cand)
+deactivate LCAND
+deactivate ANUN
+deactivate CTRL
+UI --> FRL : apresenta dados da candidatura e solicita confirmacao
+deactivate UI
+
+FRL -> UI : confirma dados da candidatura
+activate UI
+UI -> CTRL: registaCandidatura()
+activate CTRL
+CTRL -> ANUN: registaCandidatura(cand)
+activate ANUN
+ANUN -> ANUN: aceitaCandidaturas()
+ANUN -> ANUN: éFreelancerElegivel(freel)
+ANUN -> LCAND: registaCandidatura(cand)
+deactivate ANUN
+activate LCAND
+LCAND -> LCAND: validacandidatura(cand)
+LCAND -> LCAND: addCandidatura(cand)
+UI --> FRL: informa do sucesso da operacao
+deactivate LCAND
+deactivate CTRL
+deactivate UI
+
+@enduml

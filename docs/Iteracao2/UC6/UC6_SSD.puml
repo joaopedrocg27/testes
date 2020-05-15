@@ -1,0 +1,23 @@
+@startuml
+autonumber
+actor "Colaborador de Organização" as COL
+
+activate COL
+COL -> ":Sistema" : inicia a especificação de uma tarefa
+activate ":Sistema"
+":Sistema" --> COL : solicita os dados \n(referência, designação, descrição informal e de caráter técnico, duração, custo, categoria)
+deactivate ":Sistema"
+
+COL -> ":Sistema" : introduz os dados solicitados
+activate ":Sistema"
+":Sistema" --> COL : apresenta os dados e solicita confirmação
+deactivate ":Sistema"
+
+COL -> ":Sistema" : confirma os dados
+activate ":Sistema"
+":Sistema" --> COL : informa do sucesso da operação
+deactivate ":Sistema"
+
+deactivate COL
+
+@enduml

@@ -1,0 +1,79 @@
+@startuml
+autonumber
+
+actor "Gestor de Organização" as GEST
+participant ":EspecificarColaboradorUI" as UI
+participant ":EspecificarColaboradorController" as CTRL
+participant "AplicacaoPOT" as _APP
+participant "app\n:AplicacaoPOT" as APP
+participant "sessao\n:SessaoUtilizador" as SESSAO
+participant ":Plataforma" as PLAT
+participant "ro\n:RegistoOrganizacoes" as RO #DeepSkyBlue
+participant "org\n:Organizacao" as ORG
+participant "lc\n:ListaColaboradores" as LC #DeepSkyBlue
+participant "colab\n:Colaborador" as COLAB
+
+activate GEST
+GEST -> UI : inicia especificação de colaborador
+activate UI
+
+UI --> GEST : solicita dados do colaborador \n(nome,função,tlf,email)
+deactivate UI
+
+GEST -> UI : introduz os dados solicitados
+activate UI
+UI -> CTRL : novoColaborador(nome,funcao,tlf,email)
+activate CTRL
+CTRL -> _APP: app = getInstance()
+activate _APP
+deactivate _APP
+CTRL -> APP: sessao = getSessaoAtual()
+activate APP
+deactivate APP
+CTRL -> SESSAO: emailUtlz = getEmailUtilizador()
+activate SESSAO
+deactivate SESSAO
+CTRL -> PLAT : ro = getRegistoOrganizacao()
+activate PLAT
+deactivate PLAT
+CTRL -> RO: org = getOrganizacaoByEmailUtilizador(emailUtlz)
+activate RO #DeepSkyBlue
+deactivate RO
+CTRL -> ORG : lc = getListaColaboradores()
+activate ORG
+deactivate ORG
+CTRL -> LC: colab = novoColaborador(nome,funcao,tlf,email)
+activate LC #DeepSkyBlue
+LC --> COLAB **: create(nome,funcao,tlf,email)
+deactivate LC
+CTRL -> LC: validaColaborador(colab)
+activate LC #DeepSkyBlue
+deactivate LC
+UI --> GEST : apresenta dados e solicita confirmação
+deactivate ORG
+deactivate PLAT
+deactivate UI
+deactivate CTRL
+
+GEST -> UI : confirma
+activate UI
+
+UI -> CTRL: registaColaborador()
+activate CTRL
+CTRL -> LC: registaColaborador(colab)
+activate LC #DeepSkyBlue
+LC -> LC : validaColaborador(colab)
+activate LC #DeepSkyBlue
+deactivate LC
+ref over PLAT, COLAB : UC5_SD_RegistarColaboradorComoUtilizador
+LC -> LC: addColaborador(colab)
+activate LC #DeepSkyBlue
+deactivate LC
+deactivate LC
+
+UI --> GEST: informa do sucesso da operação
+deactivate ORG
+deactivate CTRL
+deactivate UI
+
+@enduml

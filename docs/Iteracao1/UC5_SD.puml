@@ -1,0 +1,77 @@
+@startuml
+autonumber
+
+actor "Gestor de Organização" as GEST
+participant ":EspecificarColaboradorUI" as UI
+participant ":EspecificarColaboradorController" as CTRL
+participant "AplicacaoPOT" as _APP
+participant "app\n:AplicacaoPOT" as APP
+participant "sessao\n:SessaoUtilizador" as SESSAO
+participant ":Plataforma" as PLAT
+participant "org\n:Organizacao" as ORG
+participant "colab\n:Colaborador" as COLAB
+participant ":AutorizacaoFacade" as AUT
+
+activate GEST
+GEST -> UI : inicia especificação de colaborador
+activate UI
+
+UI --> GEST : solicita dados do colaborador \n(nome,função,telf,email)
+deactivate UI
+
+GEST -> UI : introduz os dados solicitados
+activate UI
+UI -> CTRL : novoColaborador(nome,funcao,telf,email)
+activate CTRL
+CTRL -> _APP: app = getInstance()
+activate _APP
+deactivate _APP
+CTRL -> APP: sessao = getSessaoAtual()
+activate APP
+deactivate APP
+CTRL -> SESSAO: emailUtlz = getEmailUtilizador()
+activate SESSAO
+deactivate SESSAO
+CTRL -> PLAT: org = getOrganizacaoByEmailUtilizador(emailUtlz)
+activate PLAT
+deactivate PLAT
+CTRL -> ORG: colab = novoColaborador(nome,funcao,telf,email)
+activate ORG
+ORG --> COLAB**: create(nome,funcao,telf,email)
+deactivate ORG
+CTRL -> ORG: validaColaborador(colab)
+activate ORG
+deactivate ORG
+
+UI --> GEST : apresenta dados e solicita confirmação
+deactivate ORG
+deactivate PLAT
+deactivate UI
+deactivate CTRL
+
+GEST -> UI : confirma
+activate UI
+
+UI -> CTRL: registaColaborador()
+activate CTRL
+CTRL -> ORG: registaColaborador(colab)
+activate ORG
+ORG -> ORG: validaColaborador(colab)
+ORG -> COLAB: nome = getNome()
+activate COLAB
+deactivate COLAB
+ORG -> COLAB: email = getEmail()
+activate COLAB
+deactivate COLAB
+ORG -> ORG: pwd = geraPwd()
+ORG -> AUT: registaUtilizadorComPapel(nome,email,pwd,"COLABORADOR")
+activate AUT
+deactivate AUT
+ORG -> ORG: addColaborador(colab)
+
+UI --> GEST: informa do sucesso da operação
+deactivate ORG
+deactivate CTRL
+deactivate UI
+
+@enduml

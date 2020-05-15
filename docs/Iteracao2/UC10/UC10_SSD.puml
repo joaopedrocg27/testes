@@ -1,0 +1,27 @@
+@startuml
+autonumber
+
+
+actor "Colaborador de Organização" as COLAB
+
+participant ":Sistema" as SIST
+
+activate COLAB
+COLAB -> SIST : inicia o processo não automático de seriação dos candidatos à realização de uma tarefa \n por si publicada
+activate SIST
+SIST --> COLAB : solicita dados (i.e. tarefa, classificação/ordenação de cada uma das candidaturas (i.e. desde 1 até n) \ne os participantes no processo (outros colaboradores da organização)
+deactivate SIST
+
+COLAB -> SIST : introduz os dados solicitados
+activate SIST
+SIST --> COLAB : apresenta os dados e solicita confirmação
+deactivate SIST
+
+COLAB -> SIST : confirma
+activate SIST
+SIST --> COLAB : informa do sucesso da operação
+deactivate SIST
+
+deactivate COLAB
+
+@enduml

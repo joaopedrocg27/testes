@@ -1,0 +1,4 @@
+Email;Referencia Unica; Designação Breve; Designacao Formal; Designação Tecnica; Duração; Custo;/nDescrição Categoria;Codigo Area Atividade;/nCodigo Competencia Tecnica;Valor do Grau Proficiencia;Obrigatorio
+jordao@gmail.com;1213;PROG;Sir Programador;Programador Java; 13;54
+Programador;1234
+1232;2;s

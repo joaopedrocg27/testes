@@ -1,0 +1,10 @@
+Nome;NIF;email;telefone;Rua/Av:; CodigoPostal;Localidade
+Loop HA, termina quando for posto um Reconhecimento Competencia Tecnica
+Grau;Designacao;Instituiçao;Media
+Loop Reconhecimento Competencia Tecnica, terminha quando for introduzida a frase "Proximo Freelancer" ou nao houver mais texto
+CTID;Grau Proficiencia
+tulio;11124124;tulio@freedom.free;933221234;Avenida do Mar nº66; 4410-245; Guarda
+3º;Engenharia Informatica;ISEP;10
+10º;Viver;Faculdade Da Vida;4
+123456;4
+1232;3

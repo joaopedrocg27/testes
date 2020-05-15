@@ -1,0 +1,28 @@
+@startuml
+autonumber
+
+title SD_CreatorOrganizacao (detalhe interligação UC 1 e UC 5)
+
+participant "ro:RegistoOrganizacoes" as ORGS
+participant "org:Organizacao" as ORG
+participant "lc:ListaColaboradores" as LCOLABS
+
+activate ORGS
+ORGS --> ORG ** : create(nome,NIF,end,tlf,site,email,colab)
+
+activate ORG
+ORG --> LCOLABS ** : create(org)
+
+note right ORG
+ver com atenção o parametro do método "create"
+end note
+
+
+ORG --> LCOLABS : addColaborador(colab)
+activate LCOLABS
+deactivate LCOLABS
+
+deactivate ORG
+
+deactivate ORGS
+@enduml

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="277px" preserveAspectRatio="none" style="width:866px;height:277px;" version="1.1" viewBox="0 0 866 277" width="866px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="frybg72ax4w7w" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g>
+        <!--MD5=[ecaed46f78f8cfe1e9ce18477649be18]
+class Plataforma-->
+        <rect fill="#FEFECE" filter="url(#frybg72ax4w7w)" height="53.8359" id="Plataforma" style="stroke: #A80036; stroke-width: 1.5;" width="103" x="6" y="71" />
+        <ellipse cx="25.95" cy="87" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M28.7156,82.875 Q28.8719,82.6563 29.0594,82.5469 Q29.2469,82.4375 29.4656,82.4375 Q29.8406,82.4375 30.075,82.7031 Q30.3094,82.9531 30.3094,83.5625 L30.3094,85.0156 Q30.3094,85.625 30.075,85.8906 Q29.8406,86.1563 29.4656,86.1563 Q29.1219,86.1563 28.9188,85.9531 Q28.7156,85.7656 28.6063,85.25 Q28.5594,84.8906 28.3719,84.7031 Q28.0438,84.3281 27.4344,84.1094 Q26.825,83.8906 26.2,83.8906 Q25.4344,83.8906 24.7938,84.2188 Q24.1688,84.5469 23.6688,85.2969 Q23.1844,86.0469 23.1844,87.0781 L23.1844,88.1719 Q23.1844,89.4063 24.075,90.2344 Q24.9656,91.0469 26.5594,91.0469 Q27.4969,91.0469 28.1531,90.7969 Q28.5438,90.6406 28.9656,90.2031 Q29.2313,89.9375 29.3719,89.8594 Q29.5281,89.7813 29.7313,89.7813 Q30.0594,89.7813 30.3094,90.0469 Q30.575,90.2969 30.575,90.6406 Q30.575,90.9844 30.2313,91.3906 Q29.7313,91.9688 28.9344,92.2969 Q27.8563,92.75 26.5594,92.75 Q25.0438,92.75 23.8406,92.125 Q22.8563,91.625 22.1688,90.5625 Q21.4813,89.4844 21.4813,88.2031 L21.4813,87.0469 Q21.4813,85.7188 22.0906,84.5781 Q22.7156,83.4219 23.8094,82.8125 Q24.9031,82.1875 26.1375,82.1875 Q26.8719,82.1875 27.5125,82.3594 Q28.1688,82.5156 28.7156,82.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="41.05" y="91.9102">Plataforma</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="108" y1="103" y2="103" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="12" y="118.4189">-String designacao</text>
+        <!--MD5=[a322db5a7ec64d2ff8f2d6cf1831dcec]
+class CompetenciaTecnica-->
+        <rect fill="#FEFECE" filter="url(#frybg72ax4w7w)" height="81.5078" id="CompetenciaTecnica" style="stroke: #A80036; stroke-width: 1.5;" width="149" x="451" y="68" />
+        <ellipse cx="466" cy="84" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M468.7656,79.875 Q468.9219,79.6563 469.1094,79.5469 Q469.2969,79.4375 469.5156,79.4375 Q469.8906,79.4375 470.125,79.7031 Q470.3594,79.9531 470.3594,80.5625 L470.3594,82.0156 Q470.3594,82.625 470.125,82.8906 Q469.8906,83.1563 469.5156,83.1563 Q469.1719,83.1563 468.9688,82.9531 Q468.7656,82.7656 468.6563,82.25 Q468.6094,81.8906 468.4219,81.7031 Q468.0938,81.3281 467.4844,81.1094 Q466.875,80.8906 466.25,80.8906 Q465.4844,80.8906 464.8438,81.2188 Q464.2188,81.5469 463.7188,82.2969 Q463.2344,83.0469 463.2344,84.0781 L463.2344,85.1719 Q463.2344,86.4063 464.125,87.2344 Q465.0156,88.0469 466.6094,88.0469 Q467.5469,88.0469 468.2031,87.7969 Q468.5938,87.6406 469.0156,87.2031 Q469.2813,86.9375 469.4219,86.8594 Q469.5781,86.7813 469.7813,86.7813 Q470.1094,86.7813 470.3594,87.0469 Q470.625,87.2969 470.625,87.6406 Q470.625,87.9844 470.2813,88.3906 Q469.7813,88.9688 468.9844,89.2969 Q467.9063,89.75 466.6094,89.75 Q465.0938,89.75 463.8906,89.125 Q462.9063,88.625 462.2188,87.5625 Q461.5313,86.4844 461.5313,85.2031 L461.5313,84.0469 Q461.5313,82.7188 462.1406,81.5781 Q462.7656,80.4219 463.8594,79.8125 Q464.9531,79.1875 466.1875,79.1875 Q466.9219,79.1875 467.5625,79.3594 Q468.2188,79.5156 468.7656,79.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="480" y="88.9102">CompetenciaTecnica</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="452" x2="599" y1="100" y2="100" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="457" y="115.4189">-String codigo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="457" y="129.2549">-String descBreve</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="457" y="143.0908">-String descDetalhada</text>
+        <!--MD5=[02456e6632d968d6f68141e5893c6991]
+class AreaAtividade-->
+        <rect fill="#FEFECE" filter="url(#frybg72ax4w7w)" height="81.5078" id="AreaAtividade" style="stroke: #A80036; stroke-width: 1.5;" width="119" x="736" y="8" />
+        <ellipse cx="756.85" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M759.6156,19.875 Q759.7719,19.6563 759.9594,19.5469 Q760.1469,19.4375 760.3656,19.4375 Q760.7406,19.4375 760.975,19.7031 Q761.2094,19.9531 761.2094,20.5625 L761.2094,22.0156 Q761.2094,22.625 760.975,22.8906 Q760.7406,23.1563 760.3656,23.1563 Q760.0219,23.1563 759.8188,22.9531 Q759.6156,22.7656 759.5063,22.25 Q759.4594,21.8906 759.2719,21.7031 Q758.9438,21.3281 758.3344,21.1094 Q757.725,20.8906 757.1,20.8906 Q756.3344,20.8906 755.6938,21.2188 Q755.0688,21.5469 754.5688,22.2969 Q754.0844,23.0469 754.0844,24.0781 L754.0844,25.1719 Q754.0844,26.4063 754.975,27.2344 Q755.8656,28.0469 757.4594,28.0469 Q758.3969,28.0469 759.0531,27.7969 Q759.4438,27.6406 759.8656,27.2031 Q760.1313,26.9375 760.2719,26.8594 Q760.4281,26.7813 760.6313,26.7813 Q760.9594,26.7813 761.2094,27.0469 Q761.475,27.2969 761.475,27.6406 Q761.475,27.9844 761.1313,28.3906 Q760.6313,28.9688 759.8344,29.2969 Q758.7563,29.75 757.4594,29.75 Q755.9438,29.75 754.7406,29.125 Q753.7563,28.625 753.0688,27.5625 Q752.3813,26.4844 752.3813,25.2031 L752.3813,24.0469 Q752.3813,22.7188 752.9906,21.5781 Q753.6156,20.4219 754.7094,19.8125 Q755.8031,19.1875 757.0375,19.1875 Q757.7719,19.1875 758.4125,19.3594 Q759.0688,19.5156 759.6156,19.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="74" x="772.15" y="28.9102">AreaAtividade</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="737" x2="854" y1="40" y2="40" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="742" y="55.4189">-String codigo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="742" y="69.2549">-String descBreve</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="742" y="83.0908">-String descDetalhada</text>
+        <!--MD5=[7bb95b5cb1c5d9061d1eedf13c97b467]
+class Administrativo-->
+        <rect fill="#FEFECE" filter="url(#frybg72ax4w7w)" height="40" id="Administrativo" style="stroke: #A80036; stroke-width: 1.5;" width="109" x="206" y="168" />
+        <ellipse cx="221" cy="184" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M223.7656,179.875 Q223.9219,179.6563 224.1094,179.5469 Q224.2969,179.4375 224.5156,179.4375 Q224.8906,179.4375 225.125,179.7031 Q225.3594,179.9531 225.3594,180.5625 L225.3594,182.0156 Q225.3594,182.625 225.125,182.8906 Q224.8906,183.1563 224.5156,183.1563 Q224.1719,183.1563 223.9688,182.9531 Q223.7656,182.7656 223.6563,182.25 Q223.6094,181.8906 223.4219,181.7031 Q223.0938,181.3281 222.4844,181.1094 Q221.875,180.8906 221.25,180.8906 Q220.4844,180.8906 219.8438,181.2188 Q219.2188,181.5469 218.7188,182.2969 Q218.2344,183.0469 218.2344,184.0781 L218.2344,185.1719 Q218.2344,186.4063 219.125,187.2344 Q220.0156,188.0469 221.6094,188.0469 Q222.5469,188.0469 223.2031,187.7969 Q223.5938,187.6406 224.0156,187.2031 Q224.2813,186.9375 224.4219,186.8594 Q224.5781,186.7813 224.7813,186.7813 Q225.1094,186.7813 225.3594,187.0469 Q225.625,187.2969 225.625,187.6406 Q225.625,187.9844 225.2813,188.3906 Q224.7813,188.9688 223.9844,189.2969 Q222.9063,189.75 221.6094,189.75 Q220.0938,189.75 218.8906,189.125 Q217.9063,188.625 217.2188,187.5625 Q216.5313,186.4844 216.5313,185.2031 L216.5313,184.0469 Q216.5313,182.7188 217.1406,181.5781 Q217.7656,180.4219 218.8594,179.8125 Q219.9531,179.1875 221.1875,179.1875 Q221.9219,179.1875 222.5625,179.3594 Q223.2188,179.5156 223.7656,179.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="235" y="188.9102">Administrativo</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="207" x2="314" y1="200" y2="200" />
+        <!--MD5=[5dd1d6732c071e710b9290b531f2fa3b]
+class Utilizador-->
+        <rect fill="#FEFECE" filter="url(#frybg72ax4w7w)" height="81.5078" id="Utilizador" style="stroke: #A80036; stroke-width: 1.5;" width="97" x="477" y="185" />
+        <ellipse cx="498.3" cy="201" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M501.0656,196.875 Q501.2219,196.6563 501.4094,196.5469 Q501.5969,196.4375 501.8156,196.4375 Q502.1906,196.4375 502.425,196.7031 Q502.6594,196.9531 502.6594,197.5625 L502.6594,199.0156 Q502.6594,199.625 502.425,199.8906 Q502.1906,200.1563 501.8156,200.1563 Q501.4719,200.1563 501.2688,199.9531 Q501.0656,199.7656 500.9563,199.25 Q500.9094,198.8906 500.7219,198.7031 Q500.3938,198.3281 499.7844,198.1094 Q499.175,197.8906 498.55,197.8906 Q497.7844,197.8906 497.1438,198.2188 Q496.5188,198.5469 496.0188,199.2969 Q495.5344,200.0469 495.5344,201.0781 L495.5344,202.1719 Q495.5344,203.4063 496.425,204.2344 Q497.3156,205.0469 498.9094,205.0469 Q499.8469,205.0469 500.5031,204.7969 Q500.8938,204.6406 501.3156,204.2031 Q501.5813,203.9375 501.7219,203.8594 Q501.8781,203.7813 502.0813,203.7813 Q502.4094,203.7813 502.6594,204.0469 Q502.925,204.2969 502.925,204.6406 Q502.925,204.9844 502.5813,205.3906 Q502.0813,205.9688 501.2844,206.2969 Q500.2063,206.75 498.9094,206.75 Q497.3938,206.75 496.1906,206.125 Q495.2063,205.625 494.5188,204.5625 Q493.8313,203.4844 493.8313,202.2031 L493.8313,201.0469 Q493.8313,199.7188 494.4406,198.5781 Q495.0656,197.4219 496.1594,196.8125 Q497.2531,196.1875 498.4875,196.1875 Q499.2219,196.1875 499.8625,196.3594 Q500.5188,196.5156 501.0656,196.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="51" x="513.7" y="205.9102">Utilizador</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="478" x2="573" y1="217" y2="217" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="483" y="232.4189">-String nome</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="483" y="246.2549">-String email</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="483" y="260.0908">-String password</text>
+        <!--MD5=[a77d152358ce76c19672aacd9fb0ada1]
+link Plataforma to CompetenciaTecnica-->
+        <path d="M109.257,99.198 C191.82,101.147 355.547,105.012 450.89,107.262 " fill="none" id="Plataforma-CompetenciaTecnica" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="235" y="97.4951">possui</text>
+        <polygon fill="#000000" points="276,90.6758,282,93.6758,276,96.6758,276,90.6758" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="117.0275" y="114.0228">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="437.938" y="121.4464">*</text>
+        <!--MD5=[e538c9efa8de58386edc6206f3c58807]
+link CompetenciaTecnica to AreaAtividade-->
+        <path d="M600.087,92.525 C642.855,82.95 696.008,71.05 735.922,62.115 " fill="none" id="CompetenciaTecnica-AreaAtividade" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="631" y="67.4951">referente a</text>
+        <polygon fill="#000000" points="695,60.6758,701,63.6758,695,66.6758,695,60.6758" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="608.0366" y="105.1896">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="720.8401" y="78.3695">1</text>
+        <!--MD5=[81e834ef6626e9dc0f465969ac08d630]
+link Administrativo to CompetenciaTecnica-->
+        <path d="M315.14,172.9328 C346.138,164.125 385.839,152.673 421,142 C430.655,139.069 440.795,135.922 450.795,132.777 " fill="none" id="Administrativo-CompetenciaTecnica" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58" x="347.5" y="138.4951">especifica</text>
+        <polygon fill="#000000" points="408.5,131.6758,414.5,134.6758,408.5,137.6758,408.5,131.6758" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="322.9526" y="185.5019">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="437.8332" y="149.5926">*</text>
+        <!--MD5=[83793280d21cff2204dcf19c1386ed48]
+link Administrativo to Utilizador-->
+        <path d="M315.145,202.7675 C325.018,205.1208 335.277,207.327 345,209 C389.423,216.6441 440.665,221.0675 476.999,223.4748 " fill="none" id="Administrativo-Utilizador" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="346" y="205.4951">atua como</text>
+        <polygon fill="#000000" points="410,198.6758,416,201.6758,410,204.6758,410,198.6758" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="323.1455" y="219.0588">0..1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="462.0363" y="237.8728">1</text>
+        <!--MD5=[b585ec1f109bee2e6a0accf9e50b3199]
+link Plataforma to Administrativo-->
+        <path d="M105.6277,125.145 C116.45,130.988 128.01,136.927 139,142 C160.449,151.901 184.685,161.453 205.767,169.2635 " fill="none" id="Plataforma-Administrativo" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="140" y="138.4951">tem</text>
+        <polygon fill="#000000" points="165,131.6758,171,134.6758,165,137.6758,165,131.6758" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="108.39" y="146.3845">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="193.0763" y="181.3395">*</text>
+        <!--MD5=[718b46c9a1975c175f4073d63ce5ccba]
+link Plataforma to AreaAtividade-->
+        <path d="M109.202,81.104 C118.999,78.348 129.249,75.807 139,74 C353.942,34.163 411.419,48.052 630,45 C663.774,44.528 672.231,44.237 706,45 C715.687,45.219 725.966,45.572 735.959,45.981 " fill="none" id="Plataforma-AreaAtividade" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="357.5" y="42.4951">possui</text>
+        <polygon fill="#000000" points="398.5,35.6758,404.5,38.6758,398.5,41.6758,398.5,35.6758" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="116.9648" y="93.3844">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="723.01" y="60.1684">*</text>
+        <!--MD5=[a365aba44a4543c6f92feac46862e336]
+@startuml
+hide methods
+left to right direction
+skinparam classAttributeIconSize 0
+
+
+class Plataforma {
+  -String designacao
+}
+
+class CompetenciaTecnica {
+  -String codigo
+  -String descBreve
+  -String descDetalhada
+}
+
+class AreaAtividade {
+  -String codigo
+  -String descBreve
+  -String descDetalhada
+}
+
+class Administrativo {
+
+}
+
+class Utilizador {
+  -String nome
+  -String email
+  -String password
+}
+
+Plataforma "1" - - "*" CompetenciaTecnica : possui >
+CompetenciaTecnica "*" - - "1" AreaAtividade : referente a >
+Administrativo "1" - - "*" CompetenciaTecnica: especifica >
+Administrativo "0..1" - - "1" Utilizador: atua como >
+Plataforma "1" - - "*" Administrativo : tem >
+Plataforma "1" - - "*" AreaAtividade : possui >
+
+@enduml
+
+PlantUML version 1.2020.01(Sun Feb 16 17:40:32 WET 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Windows 10
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

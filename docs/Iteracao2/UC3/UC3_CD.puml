@@ -1,0 +1,99 @@
+@startuml
+skinparam classAttributeIconSize 0
+class DefinirCategoriaUI {
+}
+
+class DefinirCategoriaController {
+  +novaCategoria(desc)
+  +setAT(atCod)
+  +addCaraterCT(ctCod,ob)
+  +registaCategoria()
+}
+
+class Plataforma {
+  -designacao
+  +RegistoAreaAtividade getRegistoAreaAtividade()
+  +RegistoCT getRegistoCT()
+  +RegistoCategorias getRegistoCategorias()
+}
+
+class RegistoAreaAtividade {
+  +getAT(String atCod)
+  +getListaAT()
+}
+
+class RegistoCT {
+  +getCT(catCod)
+  +getListaCT(AreaAtividade at)
+}
+
+class RegistoCategorias {
+  +novaCategoria(desc)
+  +registaCategoria(cat)
+  -validaCategoria(cat)
+  -geraCategoriaId()
+  -addCategoria(cat)
+}
+
+class CompetenciaTecnica {
+  -codigo
+  -descBreve
+  -descDetalhada
+  +getGraus()
+  +getGrauProficiencia(valorGrau)
+}
+
+class GrauProficiencia {
+  -Integer valor
+  -String designacao
+}
+
+class CaraterCT {
+  -obrigatoria
+  +CaraterCT(ct,grau,ob)
+}
+
+
+class Categoria {
+  -id
+  -descricao
+  +Categoria(id,desc,at)
+  +addCaraterCT(ct,gr,ob)
+  -validaCaraterCT(cct)
+  -addCaraterCT(cct)
+}
+
+class AreaAtividade {
+  -codigo
+  -descBreve
+  -descDetalhada
+}
+
+DefinirCategoriaUI ..> DefinirCategoriaController
+DefinirCategoriaController ..> Plataforma
+DefinirCategoriaController ..> AreaAtividade
+DefinirCategoriaController ..> CompetenciaTecnica
+DefinirCategoriaController ..> Categoria
+Plataforma "1" --> "1" RegistoAreaAtividade : tem
+Plataforma "1" --> "1" RegistoCT : tem
+Plataforma "1" --> "1" RegistoCategorias : tem
+
+RegistoAreaAtividade "1" --> "*" AreaAtividade : possui
+RegistoCategorias "1" --> "*" Categoria : possui
+
+RegistoCT "1" --> "*" CompetenciaTecnica : possui
+
+Categoria "*" --> "1" AreaAtividade: enquadra-se em
+Categoria "*" --> "*" CompetenciaTecnica: requer
+(Categoria, CompetenciaTecnica) .. CaraterCT
+CaraterCT "*" -r-> "1" GrauProficiencia: exige (como mínimo)
+
+CompetenciaTecnica "*" --> "1" AreaAtividade : referente a
+CompetenciaTecnica "1" --> "*" GrauProficiencia : aplica
+
+
+
+
+
+
+@enduml

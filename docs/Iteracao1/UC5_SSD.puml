@@ -1,0 +1,23 @@
+@startuml
+autonumber
+actor "Gestor de Organização" as GES
+
+activate GES
+GES -> ":Sistema" : inicia a especificação de um colaborador da sua organização
+activate ":Sistema"
+":Sistema" --> GES : solicita os dados \n(nome, função, contacto telefónico, endereço de email)
+deactivate ":Sistema"
+
+GES -> ":Sistema" : introduz os dados solicitados
+activate ":Sistema"
+":Sistema" --> GES : apresenta os dados e solicita confirmação
+deactivate ":Sistema"
+
+GES -> ":Sistema" : confirma os dados
+activate ":Sistema"
+":Sistema" --> GES : informa do sucesso da operação
+deactivate ":Sistema"
+
+deactivate GES
+
+@enduml
