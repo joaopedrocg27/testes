@@ -22,10 +22,10 @@ public class Main extends Application {
 
         Scene scene = new Scene(root);
 
-        
+
         stage.setResizable(false);
 
-        stage.setTitle("T4J");
+        stage.setTitle("teste");
         stage.setScene(scene);
         stage.show();
     }
