@@ -9,6 +9,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -42,7 +45,7 @@ public class InputEfetuarCandidatura {
      * @throws InvocationTargetException the invocation target exception
      * @throws ClassNotFoundException    the class not found exception
      */
-    public void run() throws IOException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, ClassNotFoundException {
+    public void run() throws IOException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, ClassNotFoundException, ParseException {
 
         File dadosOrganizacao = new File("Candidatura.txt");
         Scanner sc= new Scanner(dadosOrganizacao);
@@ -56,11 +59,13 @@ public class InputEfetuarCandidatura {
             String txtApres=dados[3].trim();
             String txtMotiv=dados[4].trim();
             String email = dados[5].trim();
+            String data = dados[6].trim();
+            Date dtIniP = new SimpleDateFormat("dd-MM-yyyy").parse(data);
             this.control = new EfetuarCandidaturaController(email);
             double valorEsperado = Double.parseDouble(valorEsperadoS);
             int numeroDeDias = Integer.parseInt(numeroDeDiasS);
 
-          this.control.novaCandidatura(anuncioID,valorEsperado,numeroDeDias,txtApres,txtMotiv);
+          this.control.novaCandidatura(anuncioID,valorEsperado,numeroDeDias,txtApres,txtMotiv,dtIniP);
           this.control.registaCandidatura();
 
 

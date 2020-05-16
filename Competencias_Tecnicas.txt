@@ -3,9 +3,30 @@ Código;Descrição Breve;Descrição Detalhada;Area de Atividade Codigo;
 1;mau
 2;mediano
 3;bom
-ProximaGP
+ProximaCP
 123456;Futebol;Defesa Esquerdo;567890;
 1;manco
 2;semi manco
 3;dois pes esquerdos
 4;bom
+ProximaCP
+1;javaFX;Uso de JavaFX;12;
+1;pouca Experiencia
+2;meio ano de experiencia
+3;ano de experiencia
+4;2 anos de experiencia
+5;Longa Experiencia
+ProximaCP
+2;graficosC;Designer grafico em C;12;
+1;pouca Experiencia
+2;meio ano de experiencia
+3;ano de experiencia
+4;2 anos de experiencia
+5;Longa Experiencia
+ProximaCP
+3;graficosJavaScript;Designer grafico em JavaScript;12;
+1;pouca Experiencia
+2;meio ano de experiencia
+3;ano de experiencia
+4;2 anos de experiencia
+5;Longa Experiencia

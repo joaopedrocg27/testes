@@ -52,6 +52,7 @@ public class InputEspecificarTarefa {
         File dadosOrganizacao = new File("Tarefas.txt");
         Scanner sc = new Scanner(dadosOrganizacao);
         sc.nextLine();
+
         while (sc.hasNextLine()) {
             String linha = sc.nextLine();
             String[] dados = linha.split(";");

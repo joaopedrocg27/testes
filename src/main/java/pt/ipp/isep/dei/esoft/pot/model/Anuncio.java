@@ -16,7 +16,7 @@ public class Anuncio {
     private Date dtFimC;
     private Date dtIniS;
     private Date dtFimS;
-    private Object regTR;
+    private Regimento regTR;
     private lstCandidatura list;
 
     /**
@@ -32,7 +32,7 @@ public class Anuncio {
      * @param dtFimS the date fim seriação
      * @param regTR  the  regimento
      */
-    public Anuncio(Colaborador c, Tarefa tarefa, Date dtIniP, Date dtFimP, Date dtIniC, Date dtFimC, Date dtIniS, Date dtFimS, Object regTR) {
+    public Anuncio(Colaborador c, Tarefa tarefa, Date dtIniP, Date dtFimP, Date dtIniC, Date dtFimC, Date dtIniS, Date dtFimS, Regimento regTR) {
         if ( (c == null) || (tarefa == null) || (dtIniP == null) ||(dtFimP == null) ||(dtIniC == null) ||(dtFimC == null) ||(dtIniS == null) ||(dtFimS == null)||(regTR == null)  )
             throw new IllegalArgumentException("Nenhum dos argumentos pode ser nulo ou vazio");
         this.c = c;
@@ -70,7 +70,6 @@ public class Anuncio {
     public Date getDtFimC (){
         return this.dtFimC;
     }
-
 
     /**
      * Get tarefa tarefa.
@@ -178,4 +177,10 @@ public class Anuncio {
         }
         return false;
     }
+
+    public Regimento getRegTR() {
+        return regTR;
+    }
+
+
 }

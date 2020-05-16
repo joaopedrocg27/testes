@@ -40,5 +40,4 @@ public class ReconhecimentoCompetenciaTecnica  implements Serializable  {
     public GrauProficiencia getGp() {
         return gp;
     }
-
 }

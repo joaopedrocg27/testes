@@ -59,4 +59,20 @@ public class Candidatura implements Serializable {
                 ", txtMotiv='" + txtMotiv + '\'' +
                 '}';
     }
+    public Freelancer getFree() {
+        return free;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public double getValorPretendido() {
+        return valorPretendido;
+    }
+
+    public int getNrDeDias() {
+        return nrDeDias;
+    }
+
 }

@@ -44,7 +44,7 @@ public class RegistoAnuncio implements Serializable {
      * @param regT   the reg t
      * @return the anuncio
      */
-    public Anuncio novoAnuncio(Colaborador c, Tarefa tarefa, Date dtIniP, Date dtFimP, Date dtIniC, Date dtFimC, Date dtIniS, Date dtFimS, Object regT) {
+    public Anuncio novoAnuncio(Colaborador c, Tarefa tarefa, Date dtIniP, Date dtFimP, Date dtIniC, Date dtFimC, Date dtIniS, Date dtFimS, Regimento regT) {
        return new Anuncio( c,  tarefa,  dtIniP,  dtFimP,  dtIniC,  dtFimC,  dtIniS,  dtFimS,  regT);
     }
 

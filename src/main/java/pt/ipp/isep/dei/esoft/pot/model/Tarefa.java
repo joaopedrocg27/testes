@@ -43,6 +43,11 @@ public class Tarefa implements Serializable {
         this.estDura = estDura;
         this.cat = cat;
     }
+
+    public Categoria getCat() {
+        return cat;
+    }
+
     public String toString(){
         return "referência única por organização='" + ref + '\'' + ", designação='" + des + '\'' + ", descrição informal='" + descInfo + '\'' + ", descrição tecnica='" + descTec + '\'' + ", estimativa de Custo=" + estimCusto + ", estimativa de duracção=" + estDura + '}';
     }

@@ -1,10 +1,8 @@
 package pt.ipp.isep.dei.esoft.pot.controller;
 
 import pt.ipp.isep.dei.esoft.autorizacao.model.SessaoUtilizador;
-import pt.ipp.isep.dei.esoft.pot.Seriacao.Seriacao;
 import pt.ipp.isep.dei.esoft.pot.model.*;
 import pt.ipp.isep.dei.esoft.pot.model.Listas.ListaTarefa;
-import pt.ipp.isep.dei.esoft.pot.controller.AplicacaoPOT;
 import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoAnuncio;
 import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoOrganizacoes;
 import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoTiposRegimento;
@@ -131,19 +129,11 @@ public class PublicarTarefaController {
      *
      * @return the tipos regimento
      */
-    public List<Object> getTiposRegimento() {
+    public List<Regimento> getTiposRegimento() {
         return this.plat.getRegistoTiposRegimento().getListTiposRegimento();
 
     }
 
-    /**
-     * Get tipo de seriaçao list.
-     *
-     * @return the list seriacao
-     */
-    public List<Seriacao> getTipoDeSeriaçao(){
-        return this.plat.getRegistoTiposRegimento().getListSeriacao();
-    }
 
     /**
      * Novo anuncio boolean.
@@ -160,7 +150,7 @@ public class PublicarTarefaController {
      */
     public boolean novoAnuncio(Date dtIniP, Date dtFimP, Date dtIniC, Date dtFimC, Date dtIniS, Date dtFimS, int desTR,String ref){
         try {
-            Object regT = this.rreg.getRegimentoByDesc(desTR);
+            Regimento regT = this.rreg.getRegimentoByID(desTR);
             RegistoAnuncio regA = this.plat.getRegistoAnuncios();
             this.tarefa=this.lTarefas.getTarefasParaPublicarByRef(ref,this.c);
             this.anuncio = regA.novoAnuncio(this.c, this.tarefa, dtIniP, dtFimP, dtIniC, dtFimC, dtIniS, dtFimS, regT);

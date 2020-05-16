@@ -106,11 +106,11 @@ public class EfetuarCandidaturaController implements Serializable {
      * @param txtMotiv      the txt motiv
      * @return the boolean
      */
-    public boolean novaCandidatura (String anuncioID, double valorEsperado, int numeroDeDias, String txtApres, String txtMotiv){
+    public boolean novaCandidatura (String anuncioID, double valorEsperado, int numeroDeDias, String txtApres, String txtMotiv,Date data){
         try {
             this.anum=this.reg_Anun.getAnuncioByID(anuncioID);
             if (this.anum.eFreelancerElegivel(this.free)&&this.anum.aceitaCandidatura()){
-                this.cand = this.anum.getList().novaCandidatura(this.free,new Date(),valorEsperado,numeroDeDias,txtApres,txtMotiv);
+                this.cand = this.anum.getList().novaCandidatura(this.free,data,valorEsperado,numeroDeDias,txtApres,txtMotiv);
                 return this.anum.getList().validaCand(cand);
             }else{
                 return false;

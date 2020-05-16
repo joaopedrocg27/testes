@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package pt.ipp.isep.dei.esoft.pot.ui;
 
 import javafx.application.Application;
@@ -12,12 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.*;
 import javafx.stage.Stage;
 import pt.ipp.isep.dei.esoft.pot.FileInput.*;
-import pt.ipp.isep.dei.esoft.pot.Seriacao.Seriacao;
-import pt.ipp.isep.dei.esoft.pot.controller.SeriarAnuncioController;
-import pt.ipp.isep.dei.esoft.pot.model.ProcessoSeriacao;
 import pt.ipp.isep.dei.esoft.pot.ui.console.MenuUI;
 
-import java.io.File;
 
 /**
  * The type Main.
@@ -28,17 +18,12 @@ public class Main extends Application {
 
     public void start(Stage stage) throws Exception {
 
-        File f = new File("login.fxml");
-        if(f.exists()) {
-            System.out.println("File exists");
-            System.out.println(f.getAbsoluteFile());
-        }
-
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-
-
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
 
         Scene scene = new Scene(root);
+
+        
+        stage.setResizable(false);
 
         stage.setTitle("T4J");
         stage.setScene(scene);
@@ -46,7 +31,6 @@ public class Main extends Application {
     }
     public static void main(String[] args){
         launch(args);
-
 
         try
         {

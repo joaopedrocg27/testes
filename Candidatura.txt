@@ -1,2 +1,4 @@
 anuncioID;valorEsperado;numeroDeDias;txtApres;txtMotiv;email
-1213;787;22;arroz com batatas;arroz com pernas;tulio@freedom.free
+12;565;23;arroz com batatas;arroz com pernas;julio@freedom.free;12-12-2014
+12;787;22;arroz com batatas;arroz com pernas;tulio@freedom.free;12-12-2014
+12;565;23;arroz com batatas;arroz com pernas;rulio@freedom.free;17-12-2013

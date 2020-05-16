@@ -7,6 +7,7 @@ import pt.ipp.isep.dei.esoft.pot.ui.console.utils.Utils;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -68,7 +69,7 @@ public class EfetuarCandidaturaUI {
         if (anuncio != null)
             anuncioID = anuncio.getTarefa().getRef();
 
-        return control.novaCandidatura(anuncioID,valorPretendido,nDeDias,txtApresentacao,txtMotivacao);
+        return control.novaCandidatura(anuncioID,valorPretendido,nDeDias,txtApresentacao,txtMotivacao,new Date());
 
     }
 

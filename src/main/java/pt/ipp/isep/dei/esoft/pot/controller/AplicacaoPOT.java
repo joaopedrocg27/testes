@@ -13,8 +13,11 @@ import java.util.Properties;
 import pt.ipp.isep.dei.esoft.autorizacao.AutorizacaoFacade;
 import pt.ipp.isep.dei.esoft.autorizacao.model.SessaoUtilizador;
 import pt.ipp.isep.dei.esoft.pot.LocalData.Data;
+import pt.ipp.isep.dei.esoft.pot.Seriacao.Algoritmo1;
+import pt.ipp.isep.dei.esoft.pot.Seriacao.Algoritmo2;
 import pt.ipp.isep.dei.esoft.pot.model.Constantes;
 import pt.ipp.isep.dei.esoft.pot.model.Plataforma;
+import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoTiposRegimento;
 
 /**
  * The type Aplicacao pot.
@@ -26,10 +29,14 @@ public class AplicacaoPOT
        
     private final Plataforma m_oPlataforma;
     private final AutorizacaoFacade m_oAutorizacao;
+    private final RegistoTiposRegimento registoTiposRegimento;
     
     private AplicacaoPOT() throws NoSuchMethodException, IOException, InstantiationException, IllegalAccessException, InvocationTargetException, ClassNotFoundException {
         Properties props = getProperties();
         this.m_oPlataforma = new Plataforma(props.getProperty(Constantes.PARAMS_PLATAFORMA_DESIGNACAO));
+        this.registoTiposRegimento = this.m_oPlataforma.getRegistoTiposRegimento();
+        this.registoTiposRegimento.novoRegimento(1,"Media-Preço-Data Registo","Seriaçao 1");
+        this.registoTiposRegimento.novoRegimento(2,"Media-Desvio Padrao-Preço-Data Registo","Seriacao 2");
         this.m_oAutorizacao = this.m_oPlataforma.getAutorizacaoFacade();
         bootstrap();
     }

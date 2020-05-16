@@ -8,6 +8,8 @@ import pt.ipp.isep.dei.esoft.pot.model.Listas.lstAnun;
 import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoAnuncio;
 import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoOrganizacoes;
 import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoTiposRegimento;
+
+import java.lang.reflect.Method;
 import java.util.*;
 
 
@@ -77,6 +79,11 @@ public class SeriarAnuncioController {
      */
     public List<Candidatura> getCandidaturalist(Anuncio a){
         return a.getList().getCandidaturaList();
+
+    }
+    public List<Candidatura> ordenarCandidaturaList(Anuncio a)  {
+       Regimento reg = a.getRegTR();
+        return  reg.Seriar(a);
 
     }
 }

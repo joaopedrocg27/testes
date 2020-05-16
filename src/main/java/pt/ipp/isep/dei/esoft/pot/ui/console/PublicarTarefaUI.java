@@ -1,13 +1,8 @@
 package pt.ipp.isep.dei.esoft.pot.ui.console;
 
-import pt.ipp.isep.dei.esoft.pot.LocalData.Data;
-import pt.ipp.isep.dei.esoft.pot.Seriacao.Seriacao;
+
 import pt.ipp.isep.dei.esoft.pot.controller.PublicarTarefaController;
-import pt.ipp.isep.dei.esoft.pot.controller.RegistarFreelancerController;
-import pt.ipp.isep.dei.esoft.pot.model.CompetenciaTecnica;
-import pt.ipp.isep.dei.esoft.pot.model.GrauProficiencia;
 import pt.ipp.isep.dei.esoft.pot.model.Regimento;
-import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoAnuncio;
 import pt.ipp.isep.dei.esoft.pot.model.Tarefa;
 import pt.ipp.isep.dei.esoft.pot.ui.console.utils.Utils;
 
@@ -22,7 +17,7 @@ import java.util.List;
 public class PublicarTarefaUI {
     private PublicarTarefaController m_controller;
     private Tarefa Tarefa;
-    private Seriacao regimento;
+    private Regimento regimento;
 
     /**
      * Instantiates a new Publicar tarefa ui.
@@ -99,15 +94,15 @@ public class PublicarTarefaUI {
                 Date dtIniS = Utils.readDateFromConsole("Data de Inicio de Seriamento: ");
                 Date dtFimS = Utils.readDateFromConsole("Data de Fim de Seriamento: ");
 
-                List<Seriacao> ltreg = m_controller.getTipoDeSeriaçao();
+                List<Regimento> ltreg = m_controller.getTiposRegimento();
 
                 if (ltreg.isEmpty()) {
                     System.out.println("ERRO: Lista de Regimento vazia!");
                     return false;
                 } else {
-                    regimento =(Seriacao) Utils.apresentaESeleciona(ltreg, "Selecione o regimento da Tarefa:");
-                    if (regimento != null) {
-                        int desc = this.regimento.getNumeroRegimeno();
+                    this.regimento =(Regimento) Utils.apresentaESeleciona(ltreg, "Selecione o regimento da Tarefa:");
+                    if (this.regimento != null) {
+                        int desc = this.regimento.getId();
                         return m_controller.novoAnuncio(dtIniP, dtFimP, dtIniC, dtFimC, dtIniS, dtFimS, desc,tarRef);
 
                     }else{

@@ -60,6 +60,7 @@ public class SeriarAnuncioUI {
         Anuncio area = (Anuncio) Utils.apresentaESeleciona(anun, "Selecione o Anuncio:");
         List<Candidatura> cand = this.controller.getCandidaturalist(area);
         Candidatura candid = (Candidatura) Utils.apresentaESeleciona(cand,"Selecione a candidatura");
+        this.controller.ordenarCandidaturaList(area);
 
        return true;
     }

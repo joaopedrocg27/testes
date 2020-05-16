@@ -171,4 +171,7 @@ public class Freelancer implements Serializable {
     public boolean validaReconhecimentoCompetenciaTecnica(ReconhecimentoCompetenciaTecnica recon){
         return (!this.reconList.getReconhecimentoCompetenciaTecnicaList().contains(recon));
     }
+    public String toString(){
+        return this.nome;
+    }
 }

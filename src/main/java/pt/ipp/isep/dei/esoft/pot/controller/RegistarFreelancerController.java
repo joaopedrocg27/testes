@@ -161,7 +161,7 @@ public class RegistarFreelancerController implements Serializable {
     public boolean novoReconhecimentoCompetenciaTecnica(String strID, int valor){
         try{
             this.ct=this.reg_CT.getCompetenciaTecnicaById(strID);
-            this.gp = this.ct.getGrauProficienciaByValor(valor-1);
+            this.gp = this.ct.getGrauProficienciaByValor(valor);
             this.recon = this.free.novoReconhecimentoCompetenciaTecnica(this.ct,this.gp);
             return this.free.validaReconhecimentoCompetenciaTecnica(this.recon);
         }catch (RuntimeException ex){

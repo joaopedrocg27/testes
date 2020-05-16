@@ -39,10 +39,10 @@ public class lgraus implements Serializable {
     {
         ArrayList<GrauProficiencia> gp = new ArrayList<>(this.list_Gp);
         Collections.sort(gp);
-       if (valor >= gp.size()){
+       if (valor > gp.size()){
            return null;
        }else{
-           return gp.get(valor);
+           return gp.get(valor-1);
        }
     }
 

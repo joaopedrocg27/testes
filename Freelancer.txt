@@ -8,3 +8,18 @@ tulio;11124124;tulio@freedom.free;933221234;Avenida do Mar nº66; 4410-245; Guar
 10º;Viver;Faculdade Da Vida;4
 123456;4
 1232;3
+1;4
+2;4
+3;4
+Proximo Freelancer
+julio;11124125;julio@freedom.free;11124124;Avenida da praia nº53 ; 4321-044; Monsanto
+3º;Engenharia Informatica;ISEP;10
+1;3
+2;3
+3;3
+Proximo Freelancer
+rulio;11124125;rulio@freedom.free;11124124;Avenida da praia nº53 ; 4321-044; Monsanto
+3º;Engenharia Informatica;ISEP;10
+1;3
+2;3
+3;3

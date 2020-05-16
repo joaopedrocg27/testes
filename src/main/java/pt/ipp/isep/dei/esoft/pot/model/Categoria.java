@@ -140,6 +140,13 @@ public class Categoria implements Serializable {
     public List<CaraterCT> getCaracterCTList(){
         return this.listCaracterCT.getCaracterCTList();
     }
+    public List<CompetenciaTecnica> getListaCT(){
+        List<CompetenciaTecnica> lct = new ArrayList<>();
+        for (CaraterCT ctt:this.getCaracterCTList()){
+            lct.add(ctt.getCt());
+        }
+        return lct;
+    }
 
 
 }
