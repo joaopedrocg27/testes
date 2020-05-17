@@ -10,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import pt.ipp.isep.dei.esoft.autorizacao.model.SessaoUtilizador;
 import pt.ipp.isep.dei.esoft.pot.FileInput.*;
@@ -93,6 +94,7 @@ public class LoginController implements Initializable {
             Scene scene = new Scene(root1);
             janela.setResizable(false);
             janela.setTitle("T4J");
+            janela.getIcons().add(new Image("https://media-exp1.licdn.com/dms/image/C4E0BAQF4QqK3j0aJTg/company-logo_200_200/0?e=2159024400&v=beta&t=dmvO7NnU_rCKi09KLS4AbDHwJVHASswdNalMJ0tLGSM"));
             janela.setScene(scene);
 
         }

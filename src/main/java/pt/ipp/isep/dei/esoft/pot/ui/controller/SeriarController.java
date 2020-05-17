@@ -34,7 +34,7 @@ public class SeriarController {
     @FXML
     private ListView<Anuncio> lstView;
 
-
+    @FXML
     public void Seriar(){
         if (lista.getSelectionModel().getSelectedItem() == null) {
             criarAlerta("Erro...", "Por favor, selecione o anúncio que pretende seriar!");
@@ -48,12 +48,14 @@ public class SeriarController {
 
     }
 
+    @FXML
     public void verAnunciosAction() {
         lista.getItems().setAll(rAnu.getlAnuncio());
         dados.setText("Anúncios:");
         btnVerAnuncios.setDisable(true);
     }
 
+    @FXML
     public void verCandidaturasAction() {
         if (lista.getSelectionModel().getSelectedItem() == null) {
             criarAlerta("Erro", "Por favor, selecione o anúncio");
@@ -66,7 +68,7 @@ public class SeriarController {
         btnVerAnuncios.setDisable(false);
         btnVerCan.setDisable(true);
     }
-
+    @FXML
     private Alert criarAlerta(String cabecalho, String mensagem) {
         Alert alerta = new Alert(Alert.AlertType.ERROR);
 
