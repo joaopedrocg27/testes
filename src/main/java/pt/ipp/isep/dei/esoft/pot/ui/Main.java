@@ -24,13 +24,11 @@ public class Main extends Application {
 
 
         stage.setResizable(false);
-
-        stage.setTitle("teste");
+        stage.setTitle("T4J");
         stage.setScene(scene);
         stage.show();
     }
     public static void main(String[] args){
-        launch(args);
 
         try
         {
@@ -65,10 +63,13 @@ public class Main extends Application {
            // InputRegistarOrganizacao h = new InputRegistarOrganizacao();
             //h.run();
 
-
+/*
             MenuUI uiMenu = new MenuUI();
 
-            uiMenu.run();
+            uiMenu.run();*/
+
+            launch(args);
+
         }
         catch( Exception e )
         {

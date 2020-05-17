@@ -2,11 +2,15 @@ package pt.ipp.isep.dei.esoft.pot.ui.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import pt.ipp.isep.dei.esoft.autorizacao.model.SessaoUtilizador;
 import pt.ipp.isep.dei.esoft.pot.FileInput.*;
 import pt.ipp.isep.dei.esoft.pot.controller.AutenticacaoController;
@@ -21,6 +25,7 @@ import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
     private AutenticacaoController m_controller;
+    Stage janela = new Stage();
 
     public LoginController() throws NoSuchMethodException, IOException, InstantiationException, IllegalAccessException, InvocationTargetException, ClassNotFoundException {
         this.m_controller = new AutenticacaoController();
@@ -56,7 +61,7 @@ public class LoginController implements Initializable {
                     }
 
                 }else{
-                    //launch app
+                    janela.show();
                     System.out.println("hvgbshkjxhhhhl");
                 }
 
@@ -83,36 +88,12 @@ public class LoginController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try
         {
+            Parent root1 = FXMLLoader.load(getClass().getResource("/fxml/seriar.fxml"));
 
-
-            InputAreaAtividade a = new InputAreaAtividade();
-            a.run();
-
-            InputCompetenciaTecnica b = new InputCompetenciaTecnica();
-            b.run();
-
-            //InputDefinirCategoria c = new InputDefinirCategoria();
-            //c.run();
-
-            InputOrganizacao e = new InputOrganizacao();
-            e.run();
-
-
-            InputEspecificarTarefa d = new InputEspecificarTarefa();
-            d.run();
-
-
-
-            InputPublicarTarefa f = new InputPublicarTarefa();
-            f.run();
-
-            InputRegistarFreelancer g = new InputRegistarFreelancer();
-            g.run();
-            InputEfetuarCandidatura i = new InputEfetuarCandidatura();
-            i.run();
-
-            // InputRegistarOrganizacao h = new InputRegistarOrganizacao();
-            //h.run();
+            Scene scene = new Scene(root1);
+            janela.setResizable(false);
+            janela.setTitle("T4J");
+            janela.setScene(scene);
 
         }
         catch( Exception e )

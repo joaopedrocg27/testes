@@ -21,20 +21,27 @@
     <children>
       <ImageView fitHeight="503.0" fitWidth="763.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@side_loggin.jpeg" />
+            <Image url="@office.jpg" />
          </image>
       </ImageView>
         <Pane layoutX="259.0" layoutY="244.0" prefHeight="330.0" prefWidth="277.0" AnchorPane.bottomAnchor="-71.0" AnchorPane.topAnchor="244.0">
             <children>
-                <TextField fx:id="txtUsername" layoutX="7.0" prefHeight="34.0" prefWidth="275.0" promptText="email" />
-                <PasswordField fx:id="txtPassword" layoutX="7.0" layoutY="61.0" prefHeight="34.0" prefWidth="275.0" promptText="password" />
-                <Button fx:id="btnLogin" defaultButton="true" layoutX="7.0" layoutY="125.0" mnemonicParsing="false" onAction="#login" onMouseClicked="#handleButtonAction" prefHeight="34.0" prefWidth="275.0" text="Login" />
+                <TextField fx:id="txtUsername" layoutX="7.0" prefHeight="34.0" prefWidth="275.0" promptText="Email  someone@org.com" />
+                <PasswordField fx:id="txtPassword" layoutX="7.0" layoutY="61.0" prefHeight="34.0" prefWidth="275.0" promptText="Palavra-Passe" />
+                <Button fx:id="btnLogin" defaultButton="true" layoutX="7.0" layoutY="125.0" mnemonicParsing="false" onAction="#login" onMouseClicked="#handleButtonAction" prefHeight="34.0" prefWidth="275.0" text="Entrar" />
             </children>
         </Pane>
-      <Label layoutX="260.0" layoutY="26.0" prefHeight="201.0" prefWidth="275.0" text="T 4  J ">
+      <Label layoutX="288.0" layoutY="51.0" prefHeight="201.0" prefWidth="275.0" text="T 4  J ">
          <font>
             <Font name="Manjari Regular" size="96.0" />
          </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
       </Label>
     </children>
 </AnchorPane>

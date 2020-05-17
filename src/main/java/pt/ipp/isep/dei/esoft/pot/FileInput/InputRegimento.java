@@ -49,10 +49,10 @@ public class InputRegimento {
         while (sc.hasNextLine()) {
             String linha = sc.nextLine();
             String[] dados = linha.split(";");
-            String strId= dados[0].trim();
+            int strId= Integer.parseInt(dados[0].trim());
             String strTitulo=dados[1].trim();
             String strDesignacao=dados[2].trim();
-            this.m_oRegimento = this.rreg.novoTipoRegimento(strId,strTitulo,strDesignacao);
+            this.rreg.novoRegimento(strId,strTitulo,strDesignacao);
             //if (this.rreg.validaTipoRegimento(this.m_oRegimento)) {
             //    this.rreg.registaRegimento(this.m_oRegimento);
             //}

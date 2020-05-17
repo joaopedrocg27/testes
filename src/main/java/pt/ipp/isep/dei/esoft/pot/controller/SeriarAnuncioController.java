@@ -4,12 +4,9 @@ import pt.ipp.isep.dei.esoft.autorizacao.model.SessaoUtilizador;
 
 import pt.ipp.isep.dei.esoft.pot.model.*;
 
-import pt.ipp.isep.dei.esoft.pot.model.Listas.lstAnun;
 import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoAnuncio;
 import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoOrganizacoes;
-import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoTiposRegimento;
 
-import java.lang.reflect.Method;
 import java.util.*;
 
 
@@ -86,4 +83,7 @@ public class SeriarAnuncioController {
         return  reg.Seriar(a);
 
     }
+
+
+
 }
