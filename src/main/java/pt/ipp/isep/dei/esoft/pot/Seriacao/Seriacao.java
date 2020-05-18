@@ -40,9 +40,6 @@ public class Seriacao {
     public String getNome() {
         return nome;
     }
-    public String toString(){
-        return this.nome;
-    }
 
     /**
      * Sets seriacao obj.

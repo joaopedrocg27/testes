@@ -50,13 +50,12 @@ public class Candidatura implements Serializable {
 
     @Override
     public String toString() {
-        return "Candidatura{" +
-                "free=" + free +
-                ", data=" + data +
-                ", valorPretendido=" + valorPretendido +
-                ", nrDeDias=" + nrDeDias +
-                ", txtApres='" + txtApres + '\'' +
-                ", txtMotiv='" + txtMotiv + '\'' +
+        return  "Freelancer=" + free +
+                ", Data=" + data +
+                ", Valor Pretendido=" + valorPretendido +
+                ", Número de Dias=" + nrDeDias +
+                ", Texto de Apresentação='" + txtApres + '\'' +
+                ", Texto Motivação='" + txtMotiv + '\'' +
                 '}';
     }
     public Freelancer getFree() {

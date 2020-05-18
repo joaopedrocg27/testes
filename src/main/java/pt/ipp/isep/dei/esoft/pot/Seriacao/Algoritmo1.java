@@ -33,9 +33,6 @@ public class Algoritmo1 extends Regimento {
     public Algoritmo1(int ID, String nome, String descricao) {
         super(ID,nome,descricao);
     }
-    public String toString(){
-        return "Regimento1";
-    }
     @Override
     public List<Candidatura> Seriar(Anuncio anum) {
         List<Candidatura> candList = anum.getList().getCandidaturaList();

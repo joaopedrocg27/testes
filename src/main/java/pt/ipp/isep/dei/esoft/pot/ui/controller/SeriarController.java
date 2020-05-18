@@ -1,22 +1,33 @@
 package pt.ipp.isep.dei.esoft.pot.ui.controller;
 
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.layout.StackPane;
+import pt.ipp.isep.dei.esoft.pot.controller.AplicacaoPOT;
 import pt.ipp.isep.dei.esoft.pot.controller.SeriarAnuncioController;
 import pt.ipp.isep.dei.esoft.pot.model.Anuncio;
 import pt.ipp.isep.dei.esoft.pot.model.Plataforma;
-import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoAnuncio;
 
-public class SeriarController {
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.net.URL;
+import java.util.Collection;
+import java.util.ResourceBundle;
+
+
+
+public class SeriarController implements Initializable {
     private Plataforma plat;
-    private RegistoAnuncio rAnu;
-    public ListView<Anuncio> lista;
+    public ListView<Object> lista;
     private SeriarAnuncioController serCon;
+
+    public SeriarController() throws NoSuchMethodException, IOException, InstantiationException, IllegalAccessException, InvocationTargetException, ClassNotFoundException {
+        this.plat= AplicacaoPOT.getInstance().getPlataforma();
+
+    }
 
 
     @FXML
@@ -32,42 +43,47 @@ public class SeriarController {
     private Label dados;
 
     @FXML
-    private ListView<Anuncio> lstView;
+    private ListView<Object> lstView;
+
+    private Anuncio AnuncioSelecionado;
+
 
     @FXML
-    public void Seriar(){
-        if (lista.getSelectionModel().getSelectedItem() == null) {
+    public void Seriar() {
+        if (lstView.getSelectionModel().getSelectedItem() == null) {
             criarAlerta("Erro...", "Por favor, selecione o anúncio que pretende seriar!");
         } else {
-            Anuncio AnuncioSelecionado = lista.getSelectionModel().getSelectedItem();
-            lista.getItems().setAll((Anuncio) serCon.ordenarCandidaturaList(AnuncioSelecionado));
+            lstView.getItems().setAll( serCon.ordenarCandidaturaList(AnuncioSelecionado));
         }
-        btnSeriar.setDisable(true);
+        btnSeriar.setDisable(false);
         btnVerAnuncios.setDisable(false);
-        btnVerCan.setDisable(true);
+        btnVerCan.setDisable(false);
 
     }
 
     @FXML
     public void verAnunciosAction() {
-        lista.getItems().setAll(rAnu.getlAnuncio());
+        lstView.getItems().addAll(plat.getRegistoAnuncios().getlAnuncio());
         dados.setText("Anúncios:");
         btnVerAnuncios.setDisable(true);
+
     }
 
     @FXML
     public void verCandidaturasAction() {
-        if (lista.getSelectionModel().getSelectedItem() == null) {
+        if (lstView.getSelectionModel().getSelectedItem() == null) {
             criarAlerta("Erro", "Por favor, selecione o anúncio");
         } else {
-            Anuncio AnuncioSelecionado = lista.getSelectionModel().getSelectedItem();
-            lista.getItems().setAll((Anuncio) serCon.getCandidaturalist(AnuncioSelecionado));
+            AnuncioSelecionado = (Anuncio) lstView.getSelectionModel().getSelectedItem();
+            lstView.getItems().setAll(AnuncioSelecionado.getList().getCandidaturaList());
+
         }
         dados.setText("Candidaturas:");
-        btnSeriar.setDisable(true);
-        btnVerAnuncios.setDisable(false);
-        btnVerCan.setDisable(true);
+        btnSeriar.setDisable(false);
+        btnVerAnuncios.setDisable(true);
+        btnVerCan.setDisable(false);
     }
+
     @FXML
     private Alert criarAlerta(String cabecalho, String mensagem) {
         Alert alerta = new Alert(Alert.AlertType.ERROR);
@@ -79,13 +95,8 @@ public class SeriarController {
         return alerta;
     }
 
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
 
-
-
-
-
-
-
-
+    }
 }

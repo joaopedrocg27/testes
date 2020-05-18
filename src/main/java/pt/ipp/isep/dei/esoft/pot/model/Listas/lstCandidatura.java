@@ -62,4 +62,5 @@ public class lstCandidatura implements Serializable {
     public Candidatura novaCandidatura(Freelancer free, Date dataAtual, double valorPretendido, int nDias, String txtApres, String txtMotiv){
         return new Candidatura(free,dataAtual,valorPretendido,nDias,txtApres,txtMotiv);
     }
+
 }

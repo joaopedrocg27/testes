@@ -6,15 +6,15 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.dei.esoft.pot.ui.controller.SeriarController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.dei.esoft.pot.ui.controller.SeriarController">
    <children>
-      <ImageView fitHeight="400.0" fitWidth="614.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="400.0" fitWidth="705.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@poster.jpg" />
          </image>
       </ImageView>
-      <ListView fx:id="lstView" layoutX="180.0" layoutY="40.0" prefHeight="302.0" prefWidth="240.0" />
-      <Button fx:id="btnSeriar" layoutX="466.0" layoutY="285.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="86.0" text="Seriar">
+      <ListView fx:id="lstView" layoutX="180.0" layoutY="40.0" prefHeight="302.0" prefWidth="811.0" />
+      <Button fx:id="btnSeriar" layoutX="291.0" layoutY="342.0" mnemonicParsing="false" onAction="#Seriar" prefHeight="46.0" prefWidth="86.0" text="Seriar">
          <font>
             <Font name="Bodoni MT Condensed" size="20.0" />
          </font>
