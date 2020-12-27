@@ -2,4 +2,4 @@ Código;Descrição Breve;Descrição Detalhada;
 
 1234;Informatica;Programção em Java,C e Java Script;
 567890;Mecânica;Perito em roubos;
-12;Designer; Designer Graco;
+12;Designer; Designer Grafico;
