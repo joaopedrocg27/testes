@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class EspecificarTarefaUI {
 
-private EspecificarTarefaController m_controller;
+private final EspecificarTarefaController m_controller;
 
     /**
      * Instantiates a new Especificar tarefa ui.

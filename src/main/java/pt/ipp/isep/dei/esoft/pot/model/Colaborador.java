@@ -18,10 +18,10 @@ import java.util.Objects;
  */
 public class Colaborador implements Serializable
 {
-    private String m_strNome;
-    private String m_strFuncao;
-    private String m_strTelefone;
-    private String m_strEmail;
+    private final String m_strNome;
+    private final String m_strFuncao;
+    private final String m_strTelefone;
+    private final String m_strEmail;
 
 
     /**

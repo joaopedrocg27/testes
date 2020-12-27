@@ -6,10 +6,10 @@ import java.io.Serializable;
  * The type Habilitacao academica.
  */
 public class HabilitacaoAcademica implements Serializable {
-    private String grau;
-    private String design;
-    private String inst;
-    private double media;
+    private final String grau;
+    private final String design;
+    private final String inst;
+    private final double media;
 
     /**
      * Instantiates a new Habilitacao academica.

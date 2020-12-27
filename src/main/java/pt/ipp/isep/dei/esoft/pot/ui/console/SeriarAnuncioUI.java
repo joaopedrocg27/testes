@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * The type Seriar anuncio ui.
  */
 public class SeriarAnuncioUI {
-    private SeriarAnuncioController controller;
+    private final SeriarAnuncioController controller;
 
     /**
      * Instantiates a new Seriar anuncio ui.

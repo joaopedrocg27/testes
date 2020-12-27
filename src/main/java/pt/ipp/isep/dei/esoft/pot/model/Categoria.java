@@ -12,11 +12,11 @@ import java.util.Objects;
  * The type Categoria.
  */
 public class Categoria implements Serializable {
-    private String m_strDescricao;
-    private AreaAtividade m_Area;
-    private lstCaracterCT listCaracterCT;
+    private final String m_strDescricao;
+    private final AreaAtividade m_Area;
+    private final lstCaracterCT listCaracterCT;
 
-    private String m_strId;
+    private final String m_strId;
 
 
     /**

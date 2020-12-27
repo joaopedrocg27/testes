@@ -12,7 +12,7 @@ import java.util.Objects;
  * The type Registo ct.
  */
 public class RegistoCT implements Serializable {
-    private ListCT list;
+    private final ListCT list;
 
     /**
      * Instantiates a new Registo ct.

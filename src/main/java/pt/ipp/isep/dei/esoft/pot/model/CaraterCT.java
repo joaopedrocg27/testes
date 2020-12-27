@@ -6,9 +6,9 @@ import java.io.Serializable;
  * The type Carater ct.
  */
 public class CaraterCT implements Serializable {
-    private CompetenciaTecnica ct;
-    private GrauProficiencia gp;
-    private boolean obg;
+    private final CompetenciaTecnica ct;
+    private final GrauProficiencia gp;
+    private final boolean obg;
 
     /**
      * Instantiates a new Carater ct.

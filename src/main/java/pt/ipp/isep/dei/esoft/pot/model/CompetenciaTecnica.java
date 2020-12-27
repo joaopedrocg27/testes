@@ -19,11 +19,11 @@ import java.util.Objects;
  */
 public class CompetenciaTecnica implements Serializable
 {
-    private String m_strId;
-    private String m_strDescricaoBreve;
-    private String m_strDescricaoDetalhada;
-    private AreaAtividade m_oAreaAtividade;
-    private lgraus list;
+    private final String m_strId;
+    private final String m_strDescricaoBreve;
+    private final String m_strDescricaoDetalhada;
+    private final AreaAtividade m_oAreaAtividade;
+    private final lgraus list;
 
     /**
      * Instantiates a new Competencia tecnica.

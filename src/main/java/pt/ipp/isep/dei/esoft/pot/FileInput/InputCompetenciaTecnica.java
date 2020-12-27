@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class InputCompetenciaTecnica {
 
-    private EspecificarCompetenciaTecnicaController control;
+    private final EspecificarCompetenciaTecnicaController control;
 
 
     /**

@@ -19,15 +19,15 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class SeriarAnuncioController {
     private Anuncio anuncio;
-    private Plataforma plat;
-    private RegistoAnuncio listAnum;
-    private Colaborador c;
+    private final Plataforma plat;
+    private final RegistoAnuncio listAnum;
+    private final Colaborador c;
     private Tarefa tarefa;
-    private RegistoAnuncio ran;
-    private Organizacao org;
-    private RegistoOrganizacoes rorg;
-    private SessaoUtilizador sessao;
-    private AplicacaoPOT app;
+    private final RegistoAnuncio ran;
+    private final Organizacao org;
+    private final RegistoOrganizacoes rorg;
+    private final SessaoUtilizador sessao;
+    private final AplicacaoPOT app;
 
     /**
      * Instantiates a new Seriar anuncio controller.

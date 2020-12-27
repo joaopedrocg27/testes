@@ -15,8 +15,8 @@ import java.util.Objects;
  */
 public class PapelUtilizador implements Serializable
 {
-    private String m_strPapel;
-    private String m_strDescricao;
+    private final String m_strPapel;
+    private final String m_strDescricao;
 
     /**
      * Instantiates a new Papel utilizador.

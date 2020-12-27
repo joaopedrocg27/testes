@@ -7,9 +7,9 @@ import java.util.Date;
  * The type Reconhecimento competencia tecnica.
  */
 public class ReconhecimentoCompetenciaTecnica  implements Serializable  {
-    private CompetenciaTecnica ct;
-    private Date data;
-    private GrauProficiencia gp;
+    private final CompetenciaTecnica ct;
+    private final Date data;
+    private final GrauProficiencia gp;
 
     /**
      * Instantiates a new Reconhecimento competencia tecnica.

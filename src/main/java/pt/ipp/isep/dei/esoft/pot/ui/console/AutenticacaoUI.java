@@ -19,7 +19,7 @@ import pt.ipp.isep.dei.esoft.pot.ui.console.utils.Utils;
  */
 public class AutenticacaoUI
 {
-    private AutenticacaoController m_controller;
+    private final AutenticacaoController m_controller;
 
     /**
      * Instantiates a new Autenticacao ui.

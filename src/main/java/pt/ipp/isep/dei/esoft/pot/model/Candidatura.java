@@ -7,10 +7,10 @@ import java.util.Date;
  * The type Candidatura.
  */
 public class Candidatura implements Serializable {
-    private Freelancer free;
-    private Date data;
-    private double valorPretendido;
-    private int nrDeDias;
+    private final Freelancer free;
+    private final Date data;
+    private final double valorPretendido;
+    private final int nrDeDias;
     private String txtApres;
     private String txtMotiv;
 

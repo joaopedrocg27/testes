@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class RegistoAnuncio implements Serializable {
     private Tarefa tar;
-    private List<Anuncio> lAnuncio;
+    private final List<Anuncio> lAnuncio;
     private Date dtIniP;
     private Date dtFimP;
     private Date dtIniC;

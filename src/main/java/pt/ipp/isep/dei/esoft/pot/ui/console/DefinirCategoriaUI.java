@@ -16,7 +16,7 @@ import java.util.List;
  * The type Definir categoria ui.
  */
 public class DefinirCategoriaUI {
-    private DefinirCategoriaController m_controller;
+    private final DefinirCategoriaController m_controller;
 
     /**
      * Instantiates a new Definir categoria ui.

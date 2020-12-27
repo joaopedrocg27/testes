@@ -11,7 +11,7 @@ import java.util.Scanner;
  * Imports file definir categoria.
  */
 public class InputDefinirCategoria {
-    private DefinirCategoriaController control;
+    private final DefinirCategoriaController control;
 
     /**
      * Instantiates a new Input definir categoria.

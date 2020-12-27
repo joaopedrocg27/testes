@@ -19,7 +19,7 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class EspecificarAreaAtividadeUI
 {
-    private EspecificarAreaAtividadeController m_controller;
+    private final EspecificarAreaAtividadeController m_controller;
 
     /**
      * Instantiates a new Especificar area atividade ui.

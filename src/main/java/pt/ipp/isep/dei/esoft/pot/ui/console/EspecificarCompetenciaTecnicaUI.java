@@ -21,7 +21,7 @@ import pt.ipp.isep.dei.esoft.pot.ui.console.utils.Utils;
  */
 public class EspecificarCompetenciaTecnicaUI
 {
-    private EspecificarCompetenciaTecnicaController m_controller;
+    private final EspecificarCompetenciaTecnicaController m_controller;
 
     /**
      * Instantiates a new Especificar competencia tecnica ui.

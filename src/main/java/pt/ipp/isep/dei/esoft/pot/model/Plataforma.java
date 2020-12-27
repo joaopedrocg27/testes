@@ -26,15 +26,15 @@ import pt.ipp.isep.dei.esoft.pot.model.Registo.*;
  */
 public class Plataforma implements Serializable
 {
-    private  RegistoTiposRegimento m_oRegistoTiposRegimentos;
-    private String m_strDesignacao;
+    private final RegistoTiposRegimento m_oRegistoTiposRegimentos;
+    private final String m_strDesignacao;
     private final AutorizacaoFacade m_oAutorizacao;
-    private RegistoCategorias m_oRegistoCategoria;
-    private RegistoAreasAtividade m_oRegistoAreaAtividade;
-    private RegistoCT m_oRegistoCompetenciaTecnica;
-    private RegistoFreelancer m_oRegistoFreelancer;
-    private RegistoOrganizacoes m_oRegistoOrganizacoes;
-    private RegistoAnuncio m_oRegistoAnuncio;
+    private final RegistoCategorias m_oRegistoCategoria;
+    private final RegistoAreasAtividade m_oRegistoAreaAtividade;
+    private final RegistoCT m_oRegistoCompetenciaTecnica;
+    private final RegistoFreelancer m_oRegistoFreelancer;
+    private final RegistoOrganizacoes m_oRegistoOrganizacoes;
+    private final RegistoAnuncio m_oRegistoAnuncio;
 
 
     /**

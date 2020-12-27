@@ -15,9 +15,9 @@ import java.util.Objects;
  */
 public class EnderecoPostal implements Serializable
 {
-    private String m_strLocal;
-    private String m_strCodPostal;
-    private String m_strLocalidade;
+    private final String m_strLocal;
+    private final String m_strCodPostal;
+    private final String m_strLocalidade;
 
 
     /**

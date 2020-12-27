@@ -8,8 +8,8 @@ import java.util.Date;
  * The type Seriacao.
  */
 public class Seriacao {
-    private int numeroRegimeno;
-    private String nome;
+    private final int numeroRegimeno;
+    private final String nome;
     private Object seriacaoObj;
 
     /**

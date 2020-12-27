@@ -19,14 +19,14 @@ import java.util.logging.Logger;
  * The type Efetuar candidatura controller.
  */
 public class EfetuarCandidaturaController implements Serializable {
-    private Plataforma plataforma;
-    private RegistoFreelancer reg_Free;
-    private AplicacaoPOT app;
-    private SessaoUtilizador sessao;
-    private Freelancer free;
+    private final Plataforma plataforma;
+    private final RegistoFreelancer reg_Free;
+    private final AplicacaoPOT app;
+    private final SessaoUtilizador sessao;
+    private final Freelancer free;
     private Candidatura cand;
-    private RegistoAnuncio reg_Anun;
-    private ArrayList<Anuncio> anuncioEligiveis;
+    private final RegistoAnuncio reg_Anun;
+    private final ArrayList<Anuncio> anuncioEligiveis;
     private Anuncio anum;
 
     /**

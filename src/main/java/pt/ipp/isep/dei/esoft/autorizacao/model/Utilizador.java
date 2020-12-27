@@ -19,10 +19,10 @@ import java.util.Set;
  */
 public class Utilizador implements Serializable
 {
-    private String m_strNome;
-    private String m_strEmail;
-    private String m_strPassword; // Não deveria guardar a password em "plain text"
-    private Set<PapelUtilizador> m_lstPapeis = new HashSet<PapelUtilizador>();
+    private final String m_strNome;
+    private final String m_strEmail;
+    private final String m_strPassword; // Não deveria guardar a password em "plain text"
+    private final Set<PapelUtilizador> m_lstPapeis = new HashSet<PapelUtilizador>();
 
     /**
      * Instantiates a new Utilizador.

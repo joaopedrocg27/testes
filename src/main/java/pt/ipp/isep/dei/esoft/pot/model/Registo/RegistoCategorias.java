@@ -12,7 +12,7 @@ import java.util.*;
  */
 public class RegistoCategorias implements Serializable {
     private Categoria oCat;
-    private List<Categoria> list;
+    private final List<Categoria> list;
 
     /**
      * Instantiates a new Registo categorias.

@@ -20,16 +20,16 @@ import java.util.logging.Logger;
  */
 public class PublicarTarefaController {
     private Anuncio anuncio;
-    private ListaTarefa lTarefas;
-    private Plataforma plat;
-    private RegistoTiposRegimento rreg;
-    private Colaborador c;
+    private final ListaTarefa lTarefas;
+    private final Plataforma plat;
+    private final RegistoTiposRegimento rreg;
+    private final Colaborador c;
     private Tarefa tarefa;
-    private RegistoAnuncio ran;
-    private Organizacao org;
-    private RegistoOrganizacoes rorg;
-    private SessaoUtilizador sessao;
-    private AplicacaoPOT app;
+    private final RegistoAnuncio ran;
+    private final Organizacao org;
+    private final RegistoOrganizacoes rorg;
+    private final SessaoUtilizador sessao;
+    private final AplicacaoPOT app;
 
     /**
      * Instantiates a new Publicar tarefa controller.

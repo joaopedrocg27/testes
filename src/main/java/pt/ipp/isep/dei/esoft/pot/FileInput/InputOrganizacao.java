@@ -12,7 +12,7 @@ import java.util.Scanner;
  * TImports file organizacao.
  */
 public class InputOrganizacao {
-    private RegistarOrganizacaoController m_controller;
+    private final RegistarOrganizacaoController m_controller;
 
     /**
      * Instantiates a new Input organizacao.

@@ -15,9 +15,9 @@ import java.util.Objects;
  */
 public class AreaAtividade implements Serializable
 {
-    private String m_strCodigo;
-    private String m_strDescricaoBreve;
-    private String m_strDescricaoDetalhada;
+    private final String m_strCodigo;
+    private final String m_strDescricaoBreve;
+    private final String m_strDescricaoDetalhada;
 
 
     /**

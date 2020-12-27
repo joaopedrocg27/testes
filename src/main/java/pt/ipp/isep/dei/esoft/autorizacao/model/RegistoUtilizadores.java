@@ -16,7 +16,7 @@ import java.util.Set;
  */
 public class RegistoUtilizadores implements Serializable
 {
-    private Set<Utilizador> m_lstUtilizadores = new HashSet<Utilizador>();
+    private final Set<Utilizador> m_lstUtilizadores = new HashSet<Utilizador>();
 
 
     /**

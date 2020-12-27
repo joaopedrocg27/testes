@@ -14,9 +14,9 @@ import java.io.Serializable;
  * The type Registo freelancer.
  */
 public class RegistoFreelancer implements AlgoritimoGeradorPwd, Serializable {
-    private lstFree list;
+    private final lstFree list;
 
-    private AutorizacaoFacade autorizacao;
+    private final AutorizacaoFacade autorizacao;
 
     /**
      * Instantiates a new Registo freelancer.

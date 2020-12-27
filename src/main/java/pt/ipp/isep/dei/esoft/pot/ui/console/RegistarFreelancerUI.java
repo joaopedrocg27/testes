@@ -14,7 +14,7 @@ import java.util.List;
  * The type Registar freelancer ui.
  */
 public class RegistarFreelancerUI {
-    private RegistarFreelancerController m_controller;
+    private final RegistarFreelancerController m_controller;
 
     /**
      * Instantiates a new Registar freelancer ui.

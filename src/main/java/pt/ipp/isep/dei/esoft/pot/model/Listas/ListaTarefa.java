@@ -47,7 +47,7 @@ public class ListaTarefa implements Serializable {
      * @return success or fail (boolean)
      */
     public boolean validaTarefa(Tarefa tar){
-        if(this.oLsTarefa.contains(tar)){ return false; }else{ return true;}
+        return !this.oLsTarefa.contains(tar);
     }
 
     /**

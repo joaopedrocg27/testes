@@ -15,7 +15,7 @@ import java.util.Objects;
  * The type Efetuar candidatura ui.
  */
 public class EfetuarCandidaturaUI {
-    private EfetuarCandidaturaController control;
+    private final EfetuarCandidaturaController control;
 
     /**
      * Instantiates a new Efetuar candidatura ui.

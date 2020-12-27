@@ -26,12 +26,12 @@ import pt.ipp.isep.dei.esoft.pot.ui.console.utils.Utils;
  */
 public class RegistarOrganizacaoController implements Serializable
 {
-    private AplicacaoPOT m_oApp;
-    private Plataforma m_oPlataforma;
+    private final AplicacaoPOT m_oApp;
+    private final Plataforma m_oPlataforma;
     private Organizacao m_oOrganizacao;
-    private RegistoOrganizacoes registo;
+    private final RegistoOrganizacoes registo;
     private Colaborador oColab;
-    private AutorizacaoFacade af;
+    private final AutorizacaoFacade af;
 
     /**
      * Instantiates a new Registar organizacao controller.

@@ -18,16 +18,16 @@ import java.util.logging.Logger;
  * The type Especificar tarefa controller.
  */
 public class EspecificarTarefaController {
-    private RegistoCategorias rcat;
-    private List<Categoria> lcat;
+    private final RegistoCategorias rcat;
+    private final List<Categoria> lcat;
     private Categoria cat;
     private ListaTarefa oTarefa;
     private Tarefa tar;
-    private AplicacaoPOT app;
-    private Plataforma plat;
-    private RegistoOrganizacoes rorgs;
-    private Organizacao org;
-    private Colaborador colab;
+    private final AplicacaoPOT app;
+    private final Plataforma plat;
+    private final RegistoOrganizacoes rorgs;
+    private final Organizacao org;
+    private final Colaborador colab;
     private SessaoUtilizador sessao;
 
 

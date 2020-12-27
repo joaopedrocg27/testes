@@ -8,16 +8,16 @@ import java.util.Date;
  * The type Anuncio.
  */
 public class Anuncio {
-    private Colaborador c;
-    private Tarefa tarefa;
-    private Date dtIniP;
-    private Date dtFimP;
-    private Date dtIniC;
-    private Date dtFimC;
-    private Date dtIniS;
-    private Date dtFimS;
-    private Regimento regTR;
-    private lstCandidatura list;
+    private final Colaborador c;
+    private final Tarefa tarefa;
+    private final Date dtIniP;
+    private final Date dtFimP;
+    private final Date dtIniC;
+    private final Date dtFimC;
+    private final Date dtIniS;
+    private final Date dtFimS;
+    private final Regimento regTR;
+    private final lstCandidatura list;
 
     /**
      * Instantiates a new Anuncio.

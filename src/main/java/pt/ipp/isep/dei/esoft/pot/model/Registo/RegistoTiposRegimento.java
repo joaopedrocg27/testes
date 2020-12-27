@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class RegistoTiposRegimento implements Serializable {
 
-    private List<Regimento> ListTiposRegimento;
+    private final List<Regimento> ListTiposRegimento;
 
 
     /**

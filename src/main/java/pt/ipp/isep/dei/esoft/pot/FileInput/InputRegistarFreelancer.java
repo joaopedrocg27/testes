@@ -13,7 +13,7 @@ import java.util.Scanner;
  * Imports file registar freelancer.
  */
 public class InputRegistarFreelancer {
-    private RegistarFreelancerController controller;
+    private final RegistarFreelancerController controller;
 
     /**
      * Instantiates a new Input registar freelancer.

@@ -19,7 +19,7 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class RegistarOrganizacaoUI
 {
-    private RegistarOrganizacaoController m_controller;
+    private final RegistarOrganizacaoController m_controller;
 
     /**
      * Instantiates a new Registar organizacao ui.

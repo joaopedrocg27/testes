@@ -11,7 +11,7 @@ import java.util.List;
  * The type Registo areas atividade.
  */
 public class RegistoAreasAtividade implements Serializable {
-    private lstAreaAtividade list;
+    private final lstAreaAtividade list;
 
     /**
      * Instantiates a new Registo areas atividade.

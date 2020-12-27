@@ -23,9 +23,9 @@ import pt.ipp.isep.dei.esoft.pot.ui.console.utils.Utils;
  */
 public class EspecificarAreaAtividadeController implements Serializable
 {
-    private Plataforma m_oPlataforma;
+    private final Plataforma m_oPlataforma;
     private AreaAtividade m_oAreaAtividade;
-    private RegistoAreasAtividade rat;
+    private final RegistoAreasAtividade rat;
 
     /**
      * Instantiates a new Especificar area atividade controller.

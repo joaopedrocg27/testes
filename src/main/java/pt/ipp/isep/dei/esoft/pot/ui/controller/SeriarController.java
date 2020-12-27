@@ -20,7 +20,7 @@ import java.util.ResourceBundle;
 
 
 public class SeriarController implements Initializable {
-    private Plataforma plat;
+    private final Plataforma plat;
     public ListView<Object> lista;
     private SeriarAnuncioController serCon;
 

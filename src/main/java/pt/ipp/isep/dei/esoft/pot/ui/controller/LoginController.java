@@ -25,7 +25,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
-    private AutenticacaoController m_controller;
+    private final AutenticacaoController m_controller;
     Stage janela = new Stage();
 
     public LoginController() throws NoSuchMethodException, IOException, InstantiationException, IllegalAccessException, InvocationTargetException, ClassNotFoundException {

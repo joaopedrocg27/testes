@@ -24,10 +24,10 @@ import pt.ipp.isep.dei.esoft.pot.ui.console.utils.Utils;
  */
 public class EspecificarCompetenciaTecnicaController implements Serializable
 {
-    private Plataforma m_oPlataforma;
-    private RegistoCT registoCompetenciaTecnica;
+    private final Plataforma m_oPlataforma;
+    private final RegistoCT registoCompetenciaTecnica;
     private CompetenciaTecnica m_oCompetencia;
-    private RegistoAreasAtividade rat;
+    private final RegistoAreasAtividade rat;
     private GrauProficiencia gp;
 
     /**

@@ -16,7 +16,7 @@ import java.util.Set;
  */
 public class RegistoPapeisUtilizador implements Serializable
 {
-    private Set<PapelUtilizador> m_lstPapeis = new HashSet<PapelUtilizador>();
+    private final Set<PapelUtilizador> m_lstPapeis = new HashSet<PapelUtilizador>();
 
     /**
      * Novo papel utilizador papel utilizador.

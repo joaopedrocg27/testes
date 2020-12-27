@@ -9,13 +9,13 @@ import java.util.Objects;
  * The type Tarefa.
  */
 public class Tarefa implements Serializable {
-    private String ref;
-    private String des;
-    private String descInfo;
-    private String descTec;
-    private int estimCusto;
-    private int estDura;
-    private Categoria cat;
+    private final String ref;
+    private final String des;
+    private final String descInfo;
+    private final String descTec;
+    private final int estimCusto;
+    private final int estDura;
+    private final Categoria cat;
     private Colaborador colab;
 
     /**

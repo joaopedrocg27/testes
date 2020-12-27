@@ -1,13 +1,10 @@
 package pt.ipp.isep.dei.esoft.pot.FileInput;
 
 import pt.ipp.isep.dei.esoft.pot.controller.AplicacaoPOT;
-import pt.ipp.isep.dei.esoft.pot.controller.EspecificarAreaAtividadeController;
 import pt.ipp.isep.dei.esoft.pot.model.AreaAtividade;
-import pt.ipp.isep.dei.esoft.pot.model.Listas.lstAreaAtividade;
 import pt.ipp.isep.dei.esoft.pot.model.Plataforma;
 import pt.ipp.isep.dei.esoft.pot.model.Registo.RegistoAreasAtividade;
 
-import java.awt.geom.Area;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -18,9 +15,9 @@ import java.util.Scanner;
  * Imports file area atividade.
  */
 public class InputAreaAtividade {
-    private Plataforma m_oPlataforma;
-    private RegistoAreasAtividade m_oRegistoAreasAtividade;
-    private RegistoAreasAtividade rat;
+    private final Plataforma m_oPlataforma;
+    private final RegistoAreasAtividade m_oRegistoAreasAtividade;
+    private final RegistoAreasAtividade rat;
     private AreaAtividade m_oAreaAtividade;
 
     /**

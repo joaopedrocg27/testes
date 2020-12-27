@@ -11,13 +11,13 @@ import java.util.List;
  * The type Freelancer.
  */
 public class Freelancer implements Serializable {
-    private String nome;
-    private String nif;
-    private String email;
-    private String telefone;
-    private EnderecoPostal end;
-    private lstHabAcad list;
-    private lstRecon reconList;
+    private final String nome;
+    private final String nif;
+    private final String email;
+    private final String telefone;
+    private final EnderecoPostal end;
+    private final lstHabAcad list;
+    private final lstRecon reconList;
 
     /**
      * Instantiates a new Freelancer.

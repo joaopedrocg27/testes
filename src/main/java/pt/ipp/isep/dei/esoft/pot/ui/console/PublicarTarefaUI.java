@@ -15,7 +15,7 @@ import java.util.List;
  * The type Publicar tarefa ui.
  */
 public class PublicarTarefaUI {
-    private PublicarTarefaController m_controller;
+    private final PublicarTarefaController m_controller;
     private Tarefa Tarefa;
     private Regimento regimento;
 

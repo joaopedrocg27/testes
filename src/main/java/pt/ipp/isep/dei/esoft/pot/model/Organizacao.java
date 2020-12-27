@@ -18,15 +18,15 @@ import java.util.*;
   */
  public class Organizacao implements Serializable
 {
-    private String m_strNome;
-    private String m_strNIF;
-    private EnderecoPostal m_oEnderecoPostal;
-    private String m_strWebsite;
-    private String m_strTelefone;
-    private String m_strEmail;
-    private Colaborador m_oGestor;
-    private ListaTarefa ltar;
-    private lstColab lCol;
+    private final String m_strNome;
+    private final String m_strNIF;
+    private final EnderecoPostal m_oEnderecoPostal;
+    private final String m_strWebsite;
+    private final String m_strTelefone;
+    private final String m_strEmail;
+    private final Colaborador m_oGestor;
+    private final ListaTarefa ltar;
+    private final lstColab lCol;
 
     /**
      * Instantiates a new Organizacao.

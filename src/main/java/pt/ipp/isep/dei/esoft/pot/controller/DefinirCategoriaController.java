@@ -19,11 +19,11 @@ import java.util.logging.Logger;
  */
 public class DefinirCategoriaController implements Serializable  {
 
-    private Plataforma m_oPlataforma;
+    private final Plataforma m_oPlataforma;
     private AreaAtividade m_oAreaAtividade;
-    private RegistoCategorias m_oRegistoCategoria;
-    private RegistoAreasAtividade rat;
-    private RegistoCT rct;
+    private final RegistoCategorias m_oRegistoCategoria;
+    private final RegistoAreasAtividade rat;
+    private final RegistoCT rct;
     private CompetenciaTecnica m_oCompetenciaTecnica;
     private GrauProficiencia gp;
     private Categoria m_oCategoria;

@@ -19,8 +19,8 @@ import java.util.logging.Logger;
  * The type Registo organizacoes.
  */
 public class RegistoOrganizacoes implements AlgoritimoGeradorPwd, Serializable {
-    private AutorizacaoFacade m_oAutorizacao;
-    private ListaOrganizacao listaOrganizacao;
+    private final AutorizacaoFacade m_oAutorizacao;
+    private final ListaOrganizacao listaOrganizacao;
 
 
     /**

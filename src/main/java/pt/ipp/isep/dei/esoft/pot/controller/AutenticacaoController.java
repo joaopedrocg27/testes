@@ -17,7 +17,7 @@ import pt.ipp.isep.dei.esoft.autorizacao.model.PapelUtilizador;
  */
 public class AutenticacaoController
 {
-    private AplicacaoPOT m_oApp;
+    private final AplicacaoPOT m_oApp;
 
     /**
      * Instantiates a new Autenticacao controller.

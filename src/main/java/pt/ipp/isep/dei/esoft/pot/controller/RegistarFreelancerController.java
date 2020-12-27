@@ -18,14 +18,14 @@ import java.util.logging.Logger;
  * The type Registar freelancer controller.
  */
 public class RegistarFreelancerController implements Serializable {
-    private Plataforma m_oPlataforma;
-    private RegistoFreelancer registFree;
+    private final Plataforma m_oPlataforma;
+    private final RegistoFreelancer registFree;
     private Freelancer free;
     private HabilitacaoAcademica hab;
-    private RegistoCT reg_CT;
+    private final RegistoCT reg_CT;
     private CompetenciaTecnica ct;
     private GrauProficiencia gp;
-    private AutorizacaoFacade af;
+    private final AutorizacaoFacade af;
     private ReconhecimentoCompetenciaTecnica recon;
 
     /**
